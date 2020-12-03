@@ -124,6 +124,9 @@ def uploader(request):
 
         doc=DocumentUpload(name=name,upload_file=file)
         doc.save()
-        return render(request, 'Salary.html')
+        return redirect('salary')
+    else:
+        return render(request, 'fileupload.html')
 
-     return render(request, 'fileupload.html')
+
+
