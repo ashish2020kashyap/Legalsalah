@@ -1,0 +1,611 @@
+{%load static%}
+<!DOCTYPE html>
+
+<html class="no-js">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+ 
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet" type="text/css">
+    <title>Deductions under section 80</title>
+        <meta name="keywords" content="India, Indian Taxes, Taxes, Free, Efiling, Efiling Taxes, Efiling Taxes in India, Free Efiling Taxes in India, Free for Women efiling, Fastest way to efile, LegalSalah, LegalSalah, LegalSalah India, legalsalah.com, Easiest way to efile, cheap efiling,
+      Income Tax, Form 16, Form-16, two form-16, save taxes, save taxes India, Filing Taxes, Filing Income Tax, Efiling Income Tax, Efiling Income Tax in India, Free Filing Income Tax India, Fastest way to file taxes India, Sahaj, Sugam, ITR, Saral, ITR-1, ITR-2, ITR-3, ITR-4, ITR-5,
+      ITR-6, ITR-7, Trust, Business and Profession, House Property, Income, Salary, Other Income, Interest Income, Loans, Section 80C, Section 80CCF, Section 80D, Section 80E, Section 80U, LIC, PPF, NSC, Capital Gains, Sale of Stock, Sale of Shares, Sale of House, Section 54, Section 54F,
+      Section 54EC, Section 80G, Donations, Digital Signatures" />
+
+        <meta name="description" content="Add deductions under section 80" />
+    <meta name="author" content="LegalSalah" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+<link href="{% static 'taxcss.min.css'%}" rel="stylesheet" type="text/css">
+    
+    <style type="text/css">
+        tbody tr:nth-child(n) td,
+        tbody tr td {
+            background: none;
+        }
+
+        input.text {
+            max-width: 90%;
+        }
+
+        tbody tr th {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+
+<body class=" ">
+
+
+    <div class="container">
+        <header>
+            
+    <navheader>
+        <div class="brand">
+            <h1 class="logo-container mb0">
+                <a href="">
+                     <img src="{% static 'legalsalah.png'%}" alt="">
+                </a>
+            </h1>
+
+                <a href="#" class="header-tax-elements hide shown-mo btn-mobile-menu-trigger">
+                    <span class="header-secondary-nav">
+            More Deductions
+            </span>
+    </a>
+
+
+            <a href="#" class="btn-mobile-menu hide shown-mo btn-mobile-menu-trigger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div><nav class="navigation hidden-mo">
+            
+
+        </nav>
+    </navheader>
+
+
+
+        </header>
+
+        <div id="main" role="main">
+
+            
+    <div class="tac primary-nav-wrap hidden-mo" style="margin: 15px 0; margin-top: 5px;">
+        <ol class="container2 clearfix center-nav primary-nav">
+                <li><a class="nav-PersonalInfo " href="/">1. Personal Info</a></li>
+                <li><a class="nav-IncomeSources " href="/salary">2. Income Sources</a></li>
+                <li><a class="nav-Deductions  active active" href="/deduction">3. Deductions</a></li>
+                <li><a class="nav-TaxesPaid " href="tds">4. Taxes Paid</a></li>
+                <li><a class="nav-TaxFiling " href="http://legalsalah.com/Account/LogOn?returnUrl=%2Fpaytax%2Fy2020%2F0%2FSummary">5. Tax Filing</a></li>
+        </ol>
+    </div>
+        <div class="hidden-mo secondary-nav-wrap" style="margin: 15px 0; margin-bottom: 20px;">
+            <ol class="secondary-nav container2 clearfix center-nav">
+                    <li><a class=" " href="/deduction">A. Section 80 Deductions</a></li>
+                    <li><a class="  active active" href="/morededuction">B. More Deductions</a></li>
+                    <li><a class=" " href="/otherdeduction">C. Other Deductions</a></li>
+                    <li><a class=" " href="/investmentdetails">D. Investment Details</a></li>
+                <span class="secondary-nav-highlight-bar"></span>
+            </ol>
+        </div>
+        <div class="container">
+            <ol class="pretty-timeline hide shown-mo fade-in btn-mobile-menu-trigger" href="#">
+                    <li><a class="nav-PersonalInfo" href="/">Your Info</a></li>
+                    <li><a class="nav-IncomeSources" href="/salary">Incomes</a></li>
+                    <li><a class="active nav-Deductions" href="/deduction">Deductions</a></li>
+                    <li><a class="nav-TaxesPaid" href="/tds">Taxes Paid</a></li>
+                    <li><a class="nav-TaxFiling" href="http://legalsalah.com/Account/LogOn?returnUrl=%2Fpaytax%2Fy2020%2F0%2FSummary">Tax Filing</a></li>
+            </ol>
+        </div>
+<div class="sliding-nav-overlay hide shown-mo"></div>
+<div class="sliding-nav-menu hide shown-mo">
+    <div class="sliding-nav-logo"></div>
+    <div class="sliding-nav-scroller">
+
+            <div class="mobile-paytax-navigation">
+                <ul>
+                        <li><a class="nav-PersonalInfo" href="/">Personal Info</a></li>
+                        <li><a class="nav-IncomeSources" href="/salary">Income Sources</a></li>
+                        <li><a class="active nav-Deductions" href="/deduction">Deductions</a></li>
+                            <ul>
+                                    <li><a class="nav-Deductions" href="/Deduction">Section 80 Deductions</a></li>
+                                    <li><a class="active nav-MoreDeductions" href="/morededuction">More Deductions</a></li>
+                                    <li><a class="nav-EvenMoreDeductions" href="/otherdeduction">Other Deductions</a></li>
+                                    <li><a class="nav-InvestmentDetails" href="/investmentdetails">Investment Details</a></li>
+                            </ul>
+                        <li><a class="nav-TaxesPaid" href="/tds">Taxes Paid</a></li>
+                        <li><a class="nav-TaxFiling" href="http://legalsalah.com/Account/LogOn?returnUrl=%2Fpaytax%2Fy2020%2F0%2FSummary">Tax Filing</a></li>
+                </ul>
+
+            </div>
+    </div>
+</div>
+
+            
+
+
+
+
+
+<div class="container">
+    <h2>More deductions Under Section 80</h2>
+<form action="#" method="post" onsubmit="updateParentsAgeGroup()">        <div class="span-24 last">
+            
+        </div>
+        <div class="span-16">
+            <fieldset class="naked">
+                <legend>Section 80D: Deductions for Medical Insurance</legend>
+                    <h4>Deductions for Medical Insurance or Preventive Health Check-Up fees or Medical Expenditure incurred by you.</h4>
+                    <table class="table" style="table-layout: fixed;">
+                        <tr>
+                            <th></th>
+                            <th>For Self and Family</th>
+                            <th>For Parents</th>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <select data-val="true" data-val-required="The AgeGroup field is required." id="parentsAgeGroup" name="deductionsForIndividualOrHUF.deductionUS80Dcollection[1].AgeGroup" onchange="showOrHideExpenditure()" style="width: 95%;"><option value="NotSenior">Below 60 years</option>
+<option value="Senior">60 to 79 years</option>
+<option value="SuperSenior">80 years or above</option>
+</select><br />
+                                <span class="field-validation-valid notice" data-valmsg-for="deductionsForIndividualOrHUF.deductionUS80Dcollection[1].AgeGroup" data-valmsg-replace="true"></span>
+                                <input data-val="true" data-val-required="The isThePolicyHolderSeniorCitizen field is required." id="isParentSenior" name="deductionsForIndividualOrHUF.deductionUS80Dcollection[1].isThePolicyHolderSeniorCitizen" type="hidden" value="NotSeniorCitizen" />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <strong>
+                                    <label for=deductionsForIndividualOrHUF_deductionUS80Dcollection_0__medicalInsurancePremium>Medical Insurance Premium</label>
+                            </strong>
+                        </td>
+                        <td>
+                            
+<input class="text formatRupee" id="deductionsForIndividualOrHUF_deductionUS80Dcollection_0__medicalInsurancePremium" name="deductionsForIndividualOrHUF.deductionUS80Dcollection[0].medicalInsurancePremium" novalidate="novalidate" type="tel" value="" />
+<br />
+                            <span class="field-validation-valid notice" data-valmsg-for="deductionsForIndividualOrHUF.deductionUS80Dcollection[0].medicalInsurancePremium" data-valmsg-replace="true"></span>
+                        </td>
+                        <td>
+                            
+<input class="text formatRupee" id="deductionsForIndividualOrHUF_deductionUS80Dcollection_1__medicalInsurancePremium" name="deductionsForIndividualOrHUF.deductionUS80Dcollection[1].medicalInsurancePremium" novalidate="novalidate" type="tel" value="" />
+<br />
+                            <span class="field-validation-valid notice" data-valmsg-for="deductionsForIndividualOrHUF.deductionUS80Dcollection[1].medicalInsurancePremium" data-valmsg-replace="true"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><em>Medical insurance premium paid by you for Self, Spouse, Dependent Children and Parents.</em></td>
+                    </tr>
+                    <tr height="30"><td colspan="3"></td></tr>
+
+                    <tr>
+                        <td>
+                            <strong>
+                                <label for=deductionsForIndividualOrHUF_deductionUS80Dcollection_0__HealthCheckupForIndividual>Preventive Health Check-Up Fees</label>
+                        </strong>
+                    </td>
+                    <td>
+                        
+<input class="text formatRupee" id="deductionsForIndividualOrHUF_deductionUS80Dcollection_0__HealthCheckupForIndividual" name="deductionsForIndividualOrHUF.deductionUS80Dcollection[0].HealthCheckupForIndividual" novalidate="novalidate" type="tel" value="" />
+<br />
+                        <span class="field-validation-valid notice" data-valmsg-for="deductionsForIndividualOrHUF.deductionUS80Dcollection[0].HealthCheckupForIndividual" data-valmsg-replace="true"></span>
+                    </td>
+                    <td>
+                        
+<input class="text formatRupee" id="deductionsForIndividualOrHUF_deductionUS80Dcollection_1__HealthCheckupForParent" name="deductionsForIndividualOrHUF.deductionUS80Dcollection[1].HealthCheckupForParent" novalidate="novalidate" type="tel" value="" />
+<br />
+                        <span class="field-validation-valid notice" data-valmsg-for="deductionsForIndividualOrHUF.deductionUS80Dcollection[1].HealthCheckupForParent" data-valmsg-replace="true"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3"><em>Health check-up expenses paid by you for Self, Spouse, Dependent Children and Parents.</em></td>
+                </tr>
+                <tr height="30"><td colspan="3"></td></tr>
+
+                <tr class="medicalExpenditure">
+                    <td>
+                        <strong>
+                            <label for=deductionsForIndividualOrHUF_deductionUS80Dcollection_0__MedicalExpenditure>Medical Expenditure</label>
+                    </strong>
+                </td>
+                <td id="assesseeExpenditure">
+                    
+<input class="text formatRupee" id="deductionsForIndividualOrHUF_deductionUS80Dcollection_0__MedicalExpenditure" name="deductionsForIndividualOrHUF.deductionUS80Dcollection[0].MedicalExpenditure" novalidate="novalidate" type="tel" value="" />
+<br />
+                    <span class="field-validation-valid notice" data-valmsg-for="deductionsForIndividualOrHUF.deductionUS80Dcollection[0].MedicalExpenditure" data-valmsg-replace="true"></span>
+                </td>
+                <td>
+                    
+<input class="text formatRupee" id="deductionsForIndividualOrHUF_deductionUS80Dcollection_1__MedicalExpenditure" name="deductionsForIndividualOrHUF.deductionUS80Dcollection[1].MedicalExpenditure" novalidate="novalidate" type="tel" value="" />
+<br />
+                    <span class="field-validation-valid notice" data-valmsg-for="deductionsForIndividualOrHUF.deductionUS80Dcollection[1].MedicalExpenditure" data-valmsg-replace="true"></span>
+                </td>
+            </tr>
+            <tr class="medicalExpenditure">
+                <td colspan="3"><em>This expenditure can be claimed only for senior citizens who don't have medical insurance policy.</em></td>
+            </tr>
+        </table>
+            </fieldset>
+                <fieldset class="naked">
+                    <legend>Section 80E - Education Loan on higher studies (Graduate or PostGraduate)</legend>
+                    <h4>You can claim tax deduction on the <strong>interest</strong> paid on an education loan for higher studies</h4>
+                    <p>
+                        <label for=deductionsForIndividual_deductionUS80E_userDefinedTotal>Interest on higher education loan paid this year</label><br />
+                        <em>Interest paid by you on loan taken out by you. Loan can be for yourself or your spouse or your children </em> <br />
+                        
+<input class="text formatRupee" id="deductionsForIndividual_deductionUS80E_userDefinedTotal" name="deductionsForIndividual.deductionUS80E.userDefinedTotal" novalidate="novalidate" type="tel" value="" />
+<br />
+                        <span class="field-validation-valid notice" data-valmsg-for="deductionsForIndividual.deductionUS80E.userDefinedTotal" data-valmsg-replace="true"></span>
+                    </p>
+                </fieldset>
+
+                <fieldset class="naked">
+                    <legend>Section 80CCC - Contribution to Pension Plan / Annuity Fund </legend>
+                    <div class="hidden-mo" id="sec80CCC">
+                        <p>
+                            <label for=deductionsForIndividual_deductionUS80CCC_annuityPlanOfLIC>Contribution amount to Pension Plan / Annuity Fund for Section 80CCC</label><br />
+                            
+<input class="text formatRupee" id="deductionsForIndividual_deductionUS80CCC_annuityPlanOfLIC" name="deductionsForIndividual.deductionUS80CCC.annuityPlanOfLIC" novalidate="novalidate" type="tel" value="0" />
+<br />
+                            <span class="field-validation-valid notice" data-valmsg-for="deductionsForIndividual.deductionUS80CCC.annuityPlanOfLIC" data-valmsg-replace="true"></span>
+                        </p>
+                    </div>
+                    <span class="hide shown-mo"><a href="#sec80CCC" class="small awesome blue btn-80g-expand hide">Click to Expand</a></span>
+                </fieldset>
+
+        <fieldset class="naked">
+            <legend>Section 80CCD (1) and (1B) - Employee Contribution to New Pension Scheme (NPS). </legend>
+            <h4>Employee's contribution to the New Pension System (NPS).</h4>
+            <div class="hidden-mo" id="sec80CCD1">
+                <p class="quiet">
+Please enter your own contribution to NPS.<br />
+LegalSalah will automatically split it into Section 80 CCD(1) and CCD(1B) in your tax return.<br />
+The split will be optimised to give you maximum tax savings.                </p>
+                <p>
+                    <label for=deductionsForIndividual_deductionUS80CCD_employeeContribution>Contribution towards Section 80CCD(1)</label><br />
+                    
+<input class="text formatRupee" id="deductionsForIndividual_deductionUS80CCD_employeeContribution" name="deductionsForIndividual.deductionUS80CCD.employeeContribution" novalidate="novalidate" type="tel" value="0" />
+<br />
+                    <span class="field-validation-valid notice" data-valmsg-for="deductionsForIndividual.deductionUS80CCD.employeeContribution" data-valmsg-replace="true"></span>
+                </p>
+            </div>
+            <span class="hide shown-mo"><a href="#sec80CCD1" class="small awesome blue btn-80g-expand hide">Click to Expand</a></span>
+        </fieldset>
+                        <fieldset class="naked">
+                        <legend>Section 80CCD(2) - Employer Contribution in NPS</legend>
+                        <div class="hidden-mo" id="sec80CCD2">
+                            <p>
+                                <label for=deductionsForIndividual_deductionUS80CCD2_employerContributionUnderNPS>Employers contribution towards NPS (upto 10% of Salary).</label><br />
+                                
+<input class="text formatRupee" id="deductionsForIndividual_deductionUS80CCD2_employerContributionUnderNPS" name="deductionsForIndividual.deductionUS80CCD2.employerContributionUnderNPS" novalidate="novalidate" type="tel" value="" />
+<br />
+                                <span class="field-validation-valid notice" data-valmsg-for="deductionsForIndividual.deductionUS80CCD2.employerContributionUnderNPS" data-valmsg-replace="true"></span>
+                            </p>
+                        </div>
+                        <span class="hide shown-mo"><a href="#sec80CCD2" class="small awesome blue btn-80g-expand hide">Click to Expand</a></span>
+                    </fieldset>
+
+            <a href="#less-frequently-used-deductions" id="js-hide-moreDeductions" style="display:none;"
+               class="large awesome blue btn-80g-expand m10" data-tracking-action="expand_special_deductions" data-tracking-label="more_deductions">
+                Add Special Deductions
+            </a>
+            <div id="less-frequently-used-deductions" class="">
+                <h3>
+                    The following deductions are applicable less often.
+                </h3>
+                <fieldset class="naked">
+                    <legend>Section 80GG - Deduction for House Rent. Self-employed or Salary with no HRA.</legend>
+                    <h4>Not a commonly applicable deduction. Please be careful while claiming. If you receive HRA benefit, then you cannot claim this deduction. If you are looking to claim HRA, then refer to the HRA exemption in the Salary section in INCOME SOURCES.</h4>
+                    <div class="hidden-mo" id="sec80GG">
+                        <span class="quiet">Eligibility: Your spouse or minor child should not own House Property in same town where paying rent. Self occupied house property Interest deduction should not have been availed.</span>
+                        <p>
+                            <br />
+                            <label for=deductionsForIndividualOrHUF_deductionUS80GG_rentPaidPerMonth>Rent Paid Per Month</label><br />
+                            
+<input class="text formatRupee" id="deductionsForIndividualOrHUF_deductionUS80GG_rentPaidPerMonth" name="deductionsForIndividualOrHUF.deductionUS80GG.rentPaidPerMonth" novalidate="novalidate" type="tel" value="0" />
+<br />
+                            <span class="field-validation-valid notice" data-valmsg-for="deductionsForIndividualOrHUF.deductionUS80GG.rentPaidPerMonth" data-valmsg-replace="true"></span>
+                        </p>
+                        <p>
+                            <label for=deductionsForIndividualOrHUF_deductionUS80GG_numMonthsRentPaid>Number of Months Rent Paid</label><br />
+                            <select id="deductionsForIndividualOrHUF_deductionUS80GG_numMonthsRentPaid" name="deductionsForIndividualOrHUF.deductionUS80GG.numMonthsRentPaid"><option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option selected="selected" value="12">12</option>
+</select><br />
+                            <span class="field-validation-valid notice" data-valmsg-for="deductionsForIndividualOrHUF.deductionUS80GG.numMonthsRentPaid" data-valmsg-replace="true"></span>
+
+                        </p>
+                    </div>
+                    <span class="hide shown-mo"><a href="#sec80GG" class="small awesome blue btn-80g-expand hide">Click to Expand</a></span>
+                </fieldset>
+                <fieldset class="naked">
+                    <legend>Section 80DDB: Deductions for treatment of specified diseases and ailments</legend>
+                    <h4>This deduction is for certain specified diseases. (It is not a commonly applicable deduction). Please be careful while claiming this deduction.</h4>
+                    <div class="hidden-mo" id="sec80DDB">
+                        <p>
+                            <label for=deductionsForIndividualOrHUF_deductionUS80DDBcollection_0__medicalTreatmentCosts>Medical Treatment Costs for specified Diseases under Section 80DDB</label><br />
+                            
+<input class="text formatRupee" id="deductionsForIndividualOrHUF_deductionUS80DDBcollection_0__medicalTreatmentCosts" name="deductionsForIndividualOrHUF.deductionUS80DDBcollection[0].medicalTreatmentCosts" novalidate="novalidate" type="tel" value="" />
+<br />
+                            <span class="field-validation-valid notice" data-valmsg-for="deductionsForIndividualOrHUF.deductionUS80DDBcollection[0].medicalTreatmentCosts" data-valmsg-replace="true"></span>
+                        </p>
+                        <p>
+                            <label for=deductionsForIndividualOrHUF_deductionUS80DDBcollection_0__isTheSubjectSenior>Age of person for whom deduction is being claimed. </label><br />
+                            <select data-val="true" data-val-required="The isTheSubjectSenior field is required." id="deductionsForIndividualOrHUF_deductionUS80DDBcollection_0__isTheSubjectSenior" name="deductionsForIndividualOrHUF.deductionUS80DDBcollection[0].isTheSubjectSenior"><option value="NotInit"></option>
+<option selected="selected" value="NotSenior">Below 60 years</option>
+<option value="Senior">60 years and above</option>
+</select><br />
+                            <span class="field-validation-valid notice" data-valmsg-for="deductionsForIndividualOrHUF.deductionUS80DDBcollection[0].isTheSubjectSenior" data-valmsg-replace="true"></span>
+
+                        </p>
+                    </div>
+                    <span class="hide shown-mo"><a href="#sec80DDB" class="small awesome blue btn-80g-expand hide">Click to Expand</a></span>
+                </fieldset>
+                        <fieldset class="naked">
+                            <legend>Section 80EE - Interest on Home Loan</legend>
+                            <div class="hidden-mo" id="sec80EE">
+                                <p class="quiet">
+                                    Read about the eligibility criteria of Section 80EE: 
+                                    Deduction under section 80EE is available on interest on loan taken from a financial institution on your <b>first house</b> purchased.
+                                    <b>This loan should be sanctioned between 
+                                        April 1st, 2016 
+                                        to March 31st 2017.</b>
+                                    The value of the house can be upto Rs. 50 Lakhs
+                                    and the total home loan can be upto Rs. 35 Lakhs.
+                                </p>
+                                <p>
+                                    <label for=deductionsForIndividual_deductionUS80EE>Deductions under Section 80EE</label><br />
+                                    
+<input class="text track-focus formatRupee" data_name="Ded80EE" id="deductionsForIndividual_deductionUS80EE" name="deductionsForIndividual.deductionUS80EE" novalidate="novalidate" type="tel" value="" />
+<br />
+                                    <span class="field-validation-valid notice" data-valmsg-for="deductionsForIndividual.deductionUS80EE" data-valmsg-replace="true"></span>
+                                </p>
+                            </div>
+                            <span class="hide shown-mo"><a href="#sec80EE" class="small awesome blue btn-80g-expand hide">Click to Expand</a></span>
+                        </fieldset>
+                        <fieldset class="naked">
+                            <legend>Section 80EEA - Interest on Home Loan</legend>
+                            <div class="hidden-mo" id="sec80EEA">
+                                <p class="quiet">
+                                    Read about the eligibility criteria of Section 80EEA: 
+                                    Deduction under section 80EEA is available on interest on loan taken from a financial institution on your <b>first house</b> purchased.
+                                    <b>This loan should be sanctioned between
+                                    between April 1st, 2019 
+                                    to March 31st 2020.</b>
+                                    The value of the house can be upto Rs.  45 Lakhs.
+                                </p>
+                                <p>
+                                    <label for=deductionsForIndividual_deductionUS80EEA>Deductions under Section 80EEA</label><br />
+                                    
+<input class="text track-focus formatRupee" data_name="Ded80EEA" id="deductionsForIndividual_deductionUS80EEA" name="deductionsForIndividual.deductionUS80EEA" novalidate="novalidate" type="tel" value="" />
+<br />
+                                    <span class="field-validation-valid notice" data-valmsg-for="deductionsForIndividual.deductionUS80EEA" data-valmsg-replace="true"></span>
+                                </p>
+                            </div>
+                            <span class="hide shown-mo"><a href="#sec80EEA" class="small awesome blue btn-80g-expand hide">Click to Expand</a></span>
+                        </fieldset>
+                        <fieldset class="naked">
+                            <legend>Section 80EEB - Interest on Electric Vehicle Loan</legend>
+                            <div class="hidden-mo" id="sec80EEB">
+                                <p class="quiet">
+                                    Read about the eligibility criteria of Section 80EEB: Deduction under section 80EEB 
+                                    is available on interest on loan taken from a financial institution for purchase of an electric vehicle.
+                                    <b>This loan should be sanctioned between
+                                    between April 1st, 2019 
+                                    to March 31st 2020.</b>
+                                </p>
+                                <p>
+                                    <label for=deductionsForIndividual_deductionUS80EEB>Deductions under Section 80EEB</label><br />
+                                    
+<input class="text track-focus formatRupee" data_name="Ded80EEB" id="deductionsForIndividual_deductionUS80EEB" name="deductionsForIndividual.deductionUS80EEB" novalidate="novalidate" type="tel" value="" />
+<br />
+                                    <span class="field-validation-valid notice" data-valmsg-for="deductionsForIndividual.deductionUS80EEB" data-valmsg-replace="true"></span>
+                                </p>
+                            </div>
+                            <span class="hide shown-mo"><a href="#sec80EEB" class="small awesome blue btn-80g-expand hide">Click to Expand</a></span>
+                        </fieldset>
+                    <fieldset class="naked">
+                        <legend>Section 80QQB - Royalty Received on books</legend>
+                        <h4>Deduction for Author of literary/scientific/artistic book. Royalty/copyright-fees/lump-sum consideration are eligible for deduction.</h4>
+                        <div class="hidden-mo" id="sec80QQB">
+                            <p>
+                                <label for=deductionsForIndividual_deductionUS80QQB_royaltyOnBooks>Enter the deduction amount</label><br />
+                                
+<input class="text formatRupee" id="deductionsForIndividual_deductionUS80QQB_royaltyOnBooks" name="deductionsForIndividual.deductionUS80QQB.royaltyOnBooks" novalidate="novalidate" type="tel" value="0" />
+<br />
+                                <span class="field-validation-valid notice" data-valmsg-for="deductionsForIndividual.deductionUS80QQB.royaltyOnBooks" data-valmsg-replace="true"></span>
+                            </p>
+                        </div>
+                        <span class="hide shown-mo"><a href="#sec80QQB" class="small awesome blue btn-80g-expand hide">Click to Expand</a></span>
+                    </fieldset>
+                    <fieldset class="naked">
+                        <legend>Section 80RRB - Income on Patents/Inventions </legend>
+                        <h4>Deduction for Patentee - Royalty/transfer-of-rights/lump-sum consideration are eligible for deduction.</h4>
+                        <div class="hidden-mo" id="sec80RRB">
+                            <p>
+                                <label for=deductionsForIndividual_deductionUS80RRB_earningsOnPatent>Enter the deduction amount</label><br />
+                                
+<input class="text formatRupee" id="deductionsForIndividual_deductionUS80RRB_earningsOnPatent" name="deductionsForIndividual.deductionUS80RRB.earningsOnPatent" novalidate="novalidate" type="tel" value="0" />
+<br />
+                                <span class="field-validation-valid notice" data-valmsg-for="deductionsForIndividual.deductionUS80RRB.earningsOnPatent" data-valmsg-replace="true"></span>
+                            </p>
+                        </div>
+                        <span class="hide shown-mo"><a href="#sec80RRB" class="small awesome blue btn-80g-expand hide">Click to Expand</a></span>
+                    </fieldset>
+
+                <fieldset class="naked">
+                    <legend>Section 80GGC - Contribution To Political Party</legend>
+                    <div class="hidden-mo" id="sec80GGC">
+                        <p>
+                            <label for=deductionUS80GGC_assesseeContributionToPoliticalParty>Contribution or Donations to Political Party</label><br />
+                            
+<input class="text formatRupee" id="deductionUS80GGC_assesseeContributionToPoliticalParty" name="deductionUS80GGC.assesseeContributionToPoliticalParty" novalidate="novalidate" type="tel" value="" />
+<br />
+                            <span class="field-validation-valid notice" data-valmsg-for="deductionUS80GGC.assesseeContributionToPoliticalParty" data-valmsg-replace="true"></span>
+                        </p>
+                    </div>
+                    <span class="hide shown-mo"><a href="#sec80GGC" class="small awesome blue btn-80g-expand hide">Click to Expand</a></span>
+                </fieldset>
+                <fieldset class="naked">
+                    <legend>Section 80JJA </legend>
+                    <div class="hidden-mo" id="sec80JJA">
+                        <p>
+                            <label for=deductionUS80JJA_profitsFromBiodegradableWasteBusiness>Deduction exempting profits from bio-degradable waste business </label><br />
+                            
+<input class="text formatRupee" id="deductionUS80JJA_profitsFromBiodegradableWasteBusiness" name="deductionUS80JJA.profitsFromBiodegradableWasteBusiness" novalidate="novalidate" type="tel" value="" />
+<br />
+                            <span class="field-validation-valid notice" data-valmsg-for="deductionUS80JJA.profitsFromBiodegradableWasteBusiness" data-valmsg-replace="true"></span>
+                        </p>
+                    </div>
+                    <span class="hide shown-mo"><a href="#sec80JJA" class="small awesome blue btn-80g-expand hide">Click to Expand</a></span>
+                </fieldset>
+                    <fieldset>
+                        <legend>Section 80GGA : Donations for Scientific Research or Rural Development</legend>
+                        <span class="quiet">The government requires itemized details of donations for Section 80GGA.</span><br /><br />
+
+                        <button type="submit" class="medium awesome blue btn-save full-640" name="submitButton" value="RedirectTo80GGAPage">
+                            Add or Remove Donation under Section 80GGA
+                        </button>
+                    </fieldset>
+            </div>
+        </div>
+        <div class="span-7 offset-1 last paytax-box-wrap right light hidden-mo">
+
+<div class="inline-promo">
+    <div class="promo-text sidebar-plan-box">
+        <h4>
+            <strong> Get a tax expert to file your return </strong>
+        </h4>
+        <p>
+            Filing return yourself is <strong>Free.</strong>
+        </p>
+        <p>
+            If you need an expert's help, you can opt for our paid plans starting ₹799.
+        </p>
+        <a tabindex="-1" class="promo-btn" onclick="ct_trackClick('BuyCaPlan');" target="_blank" href="https://legalsalah.com/s/Pricing?ref=paytax_MoreDeductions">
+            See Plans
+        </a>
+    </div>
+</div>
+        </div>
+        <div class="span-24 last sticky-check sticky-buttons">
+            <div class="sticky-container">
+                <p>
+                    <button type="submit" disable-on-click="true" name="submitButton" data-tracking-action="sticky_save_button" data-tracking-label="more_deductions" value="saveValue" class="large awesome magenta btn-save full-640">
+                        Save
+                    </button>
+                </p>
+            </div>
+        </div>
+</form></div>
+
+
+            <div class="mt50 sticky-footer-check">
+                
+<div class="ct-trust-markers">
+    <div class="info-text">
+        © 2020 Legal Salah Solutions Private Limited | All rights reserved 
+       
+    </div>
+   
+</div>
+
+            </div>
+        </div>
+
+    </div> <!--! end of #container -->
+        <script src="../../../../ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script>!window.jQuery && document.write(unescape('%3Cscript src="/js/libs/jquery-1.11.0.min.js"%3E%3C/script%3E'))</script>
+
+    <script src="{% static 'taxjs.min.js'%}" type="text/javascript"></script>
+
+    
+<script src="../../../bundles/urlCleanupUtils.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        $(function () {
+
+            $(".btn-80g-expand").click(function () {
+                $($(this).attr("href")).removeClass("hidden-mo");
+                $(this).hide();
+                return false;
+            }).each(function () {
+                var target = $($(this).attr('href')).find('input');
+                if (target.val() && target.val() != '0') {
+                    $(this).trigger('click');
+                }
+            });
+            $('#js-hide-moreDeductions').click(function () {
+                $($(this).attr("href")).removeClass("hide");
+                $(this).hide();
+                ct_trackClick($(this).attr("data-tracking-action"), $(this).attr("data-tracking-label"))
+                return false;
+            });
+            if (false) {
+                $('.medicalExpenditure').show();
+                if (!false) {
+                    disableExpenditureFieldForFiler();
+                }
+            }
+            else {
+                $('.medicalExpenditure').hide();
+            }
+        });
+
+        function updateParentsAgeGroup() {
+            if ($('#parentsAgeGroup').val() != "NotSenior") {
+                $('#isParentSenior').val("SeniorCitizen");
+            }
+            else {
+                $('#isParentSenior').val("NotSeniorCitizen");
+            }
+        }
+
+        function disableExpenditureFieldForFiler() {
+            var x = document.getElementById('assesseeExpenditure').getElementsByTagName('input')[0];
+            x.value = '';
+            x.setAttribute('disabled', 'disabled');
+        }
+
+        function showOrHideExpenditure() {
+            if ($('#parentsAgeGroup').val() != "NotSenior") {
+                $('.medicalExpenditure').show();
+                if (!false) {
+                    disableExpenditureFieldForFiler();
+                }
+            }
+            else {
+                $('.medicalExpenditure').hide();
+                $('.medicalExpenditure input').val('');
+
+            }
+        }
+    </script>
+
+
+<script src="{% static 'dc.min.js'%}" type="text/javascript"></script>  
+  <script src="{% static 'frontdc.min.js'%}" type="text/javascript"></script>        
+ 
+</body>
+</html>

@@ -1,0 +1,244 @@
+{%load static%}
+<!DOCTYPE html>
+<html class="no-js">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet" type="text/css">
+    <title>Summary of Taxes deducted at source (TDS) | LegalSalah</title>
+        <meta name="keywords" content="India, Indian Taxes, Taxes, Free, Efiling, Efiling Taxes, Efiling Taxes in India, Free Efiling Taxes in India, Free for Women efiling, Fastest way to efile, LegalSalah, Clear Tax, Clear Tax India, legalsalah.com, Easiest way to efile, cheap efiling,
+      Income Tax, Form 16, Form-16, two form-16, save taxes, save taxes India, Filing Taxes, Filing Income Tax, Efiling Income Tax, Efiling Income Tax in India, Free Filing Income Tax India, Fastest way to file taxes India, Sahaj, Sugam, ITR, Saral, ITR-1, ITR-2, ITR-3, ITR-4, ITR-5,
+      ITR-6, ITR-7, Trust, Business and Profession, House Property, Income, Salary, Other Income, Interest Income, Loans, Section 80C, Section 80CCF, Section 80D, Section 80E, Section 80U, LIC, PPF, NSC, Capital Gains, Sale of Stock, Sale of Shares, Sale of House, Section 54, Section 54F,
+      Section 54EC, Section 80G, Donations, Digital Signatures" />
+
+        <meta name="description" content="Summary of Taxes deducted at Source (TDS). Automatically import your TDS entries from the Income Tax department." />
+    <meta name="author" content="LegalSalah" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+
+<link href="{% static 'taxcss.min.css'%}" rel="stylesheet" type="text/css">
+    
+
+
+
+    <style type="text/css">
+        .add-entry-box {
+            border: 1px solid #eee;
+            text-align: left;
+        }
+    </style>
+   
+</head>
+
+
+<body class=" ">
+
+
+    <div class="container">
+        <header>
+            
+    <navheader>
+        <div class="brand">
+            <h1 class="logo-container mb0">
+                <a href="#">
+                    <img src="{% static 'legalsalah.png'%}" alt="">
+                </a>
+            </h1>
+
+                <a href="#" class="header-tax-elements hide shown-mo btn-mobile-menu-trigger">
+                    <span class="header-secondary-nav">
+            TDS
+            </span>
+    </a>
+
+
+            <a href="#" class="btn-mobile-menu hide shown-mo btn-mobile-menu-trigger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+    </navheader>
+
+
+        </header>
+
+        <div id="main" role="main">
+
+            
+    <div class="tac primary-nav-wrap hidden-mo" style="margin: 15px 0; margin-top: 5px;">
+        <ol class="container2 clearfix center-nav primary-nav">
+                <li><a class="nav-PersonalInfo " href="Permanent.html">1. Personal Info</a></li>
+                <li><a class="nav-IncomeSources " href="Salary.html">2. Income Sources</a></li>
+                <li><a class="nav-Deductions " href="Deductions.html">3. Deductions</a></li>
+                <li><a class="nav-TaxesPaid  active active" href="TdsSummary.html">4. Taxes Paid</a></li>
+                <li><a class="nav-TaxFiling " href="#">5. Tax Filing</a></li>
+        </ol>
+    </div>
+        <div class="hidden-mo secondary-nav-wrap" style="margin: 15px 0; margin-bottom: 20px;">
+            <ol class="secondary-nav container2 clearfix center-nav">
+                    <li><a class="  active active" href="TdsSummary.html">A. TDS</a></li>
+                    <li><a class=" " href="TaxesPaidSummary.html">B. Self Tax Payments</a></li>
+                <span class="secondary-nav-highlight-bar"></span>
+            </ol>
+        </div>
+        <div class="container">
+            <ol class="pretty-timeline hide shown-mo fade-in btn-mobile-menu-trigger" href="#">
+                    <li><a class="nav-PersonalInfo" href="Permanent.html">Your Info</a></li>
+                    <li><a class="nav-IncomeSources" href="Salary.html">Incomes</a></li>
+                    <li><a class="nav-Deductions" href="Deductions.html">Deductions</a></li>
+                    <li><a class="active nav-TaxesPaid" href="TdsSummary.html">Taxes Paid</a></li>
+                    <li><a class="nav-TaxFiling" href="#">Tax Filing</a></li>
+            </ol>
+        </div>
+<div class="sliding-nav-overlay hide shown-mo"></div>
+<div class="sliding-nav-menu hide shown-mo">
+    <div class="sliding-nav-logo"></div>
+    <div class="sliding-nav-scroller">
+
+            <div class="mobile-paytax-navigation">
+                <ul>
+                        <li><a class="nav-PersonalInfo" href="Permanent.html">Personal Info</a></li>
+                        <li><a class="nav-IncomeSources" href="Salary.html">Income Sources</a></li>
+                        <li><a class="nav-Deductions" href="Deductions.html">Deductions</a></li>
+                        <li><a class="active nav-TaxesPaid" href="TdsSummary.html">Taxes Paid</a></li>
+                            <ul>
+                                    <li><a class="active nav-TdsSummary" href="TdsSummary.html">TDS</a></li>
+                                    <li><a class="nav-TaxesPaidSummary" href="TaxesPaidSummary.html">Self Tax Payments</a></li>
+                            </ul>
+                        <li><a class="nav-TaxFiling" href="#">Tax Filing</a></li>
+                </ul>
+
+            </div>
+        <div class="mobile-site-navigation hide shown-mo">
+
+
+        </div>
+    </div>
+</div>
+
+            
+
+
+
+    <div class="container">
+
+        <div class="span-12 last">
+            <h2 class="tal">Taxes Deducted/Collected at Source</h2>
+        </div>
+        <div class="span-10 right" style="text-align: right;">
+            <span>
+                    <h4 style="display: inline;">Do not have any TDS/TCS entries?</h4>
+                <a class="large awesome orange" disable-on-click="true" href="TdsSummary.html">Go To Next &gt;&gt;</a>
+            </span>
+        </div>
+        <div class="span-24 last">
+            <p class="narrate">Specify TDS/TCS which was deducted between the period of April 1, 2019 to March 31, 2020.</p>
+                <p>Please Note : Tax deductions from your Salary by your employer should be entered <a href='Salary.html' style="color: #06c;">here</a>.</p>
+        </div>
+        <div class="span-24 last">
+            
+        </div>
+
+        <div class="span-24">
+            <p class="mediumnarrate notice">
+                <b>Do you have a Form 26AS? <a href="#" style="color: #06c;">Click here to upload your Form 26AS</a> and avoid manual entry.</b>
+            </p>
+        </div>
+
+
+
+
+            <div class="span-24 add-entry-box" style="padding: 10px;">
+                <h3><strong>TDS on Salary Income</strong></h3>
+                <p>
+                    These are your Salary TDS entries. If you have more entries to add, please add them on <a href="Salary.html" style="color: #06c;">Income from Salary Page</a>.
+                </p>
+
+            </div>
+            <hr class="m40" />
+
+        <div class="span-24 add-entry-box" style="padding: 10px;">
+            <div class="span-18">
+                <h3><strong>Non Salary TDS</strong></h3>
+                <p>
+                    In this section, add TDS entries on interest income, professional or consulting income, etc. (Other than TDS on Salary and Sale of Immovable Property).
+                </p>
+            </div>
+            <div class="span-4 right">
+                <p class="narrate">
+                    <a class="large awesome azure" data-tracking-action="sticky_add_button" data-tracking-label="add_non_salary_tds" disable-on-click="true" href="AddTds.html" style="text-align: center; width: 90%;">&#x271A; Add Entry</a>
+                </p>
+            </div>
+
+        </div>
+
+        <hr class="m40" />
+
+        <div class="span-24 add-entry-box" style="padding: 10px;">
+            <div class="span-18">
+                <h3><strong>TDS on Sale/Rent of Immovable Property</strong></h3>
+                <p>
+                    If you sell/rent land, house, property or building etc (immovable property) etc, the buyer/tenant may have deducted TDS at the rate of 1% on the sale price of the property/rental and issued you a TDS certificate.You need to specify those TDS deduction details here.
+                </p>
+            </div>
+            <div class="span-4 right">
+                <p class="narrate">
+                    <a class="large awesome azure" data-tracking-action="sticky_add_button" data-tracking-label="add_sale_immovable_property" disable-on-click="true" href="AddTdsProperty.html" style="text-align: center; width: 90%;">&#x271A; Add Entry</a>
+                </p>
+            </div>
+
+        </div>
+
+        <hr class="m40">
+
+        <div class="span-24 add-entry-box" style="padding: 10px;">
+            <div class="span-18">
+                <h3><strong>Taxes Collected at Source (TCS)</strong></h3>
+                <p>
+                    In this section, you can add TCS entries (For example - on purchase of cars).
+                </p>
+            </div>
+            <div class="span-4 right">
+                <p class="narrate">
+                    <a class="large awesome azure" data-tracking-action="sticky_add_button" data-tracking-label="add_tcs_entry" disable-on-click="true" href="http://legalsalah.com/Account/LogOn?returnUrl=%2Fpaytax%2Fy2020%2F0%2FAddTcs" style="text-align: center; width: 90%;">&#x271A; Add Entry</a>
+                </p>
+            </div>
+
+        </div>
+
+        <div class="span-24 last"><p><br /></p></div>
+        <div class="span-24 last"><p><br /></p></div>
+        <div class="hide shown-mo">
+            <p>
+                <a class="large awesome orange" data-tracking-action="sticky_button" data-tracking-label="go_to_next_tds" disable-on-click="true" href="TdsSummary.html">Go To Next &gt;&gt;</a>
+            </p>
+        </div>
+    </div>
+
+            <div class="mt50 sticky-footer-check">
+                
+<div class="ct-trust-markers">
+    <div class="info-text">
+        © 2020 Legal Salah Solutions Private Limited | All rights reserved 
+    </div>
+   
+</div>
+
+            </div>
+        </div>
+
+    </div> <!--! end of #container -->
+        <script src="../../../../ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script>!window.jQuery && document.write(unescape('%3Cscript src="/js/libs/jquery-1.11.0.min.js"%3E%3C/script%3E'))</script>
+
+    <script src="{% static 'taxjs.min.js'%}" type="text/javascript"></script>
+
+    
+<script src="{% static 'urlCleanupUtils.min.js'%}" type="text/javascript"></script>
+
+</body>
+</html>

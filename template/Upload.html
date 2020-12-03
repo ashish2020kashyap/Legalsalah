@@ -1,0 +1,640 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+    <meta charset="utf-8">
+    <title>Upload your Form-16 PDF</title>
+        <meta name="keywords" content="India, Indian Taxes, Taxes, Free, Efiling, Efiling Taxes, Efiling Taxes in India, Free Efiling Taxes in India, Free for Women efiling, Fastest way to efile, LegalSalah, LegalSalah, LegalSalah India, LegalSalah.com, Easiest way to efile, cheap efiling,
+Income Tax, Income From Business and Profession, ITR-3, ITR-4, ITR-5, ITR-6, ITR-4S, Filing Income Tax Returns in India, Sahaj, Sugam, ITR, Saral, Digital Signatures" />
+            <meta name="description" content="Upload your Form-16 PDF for automatic preparation of your Income Tax Return online. E-file within 7 minutes." />
+
+<meta name="author" content="LegalSalah" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width">
+<meta property="og:type" content="website" />
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="../../../../maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+<link href="{% static '2014.min.css'%}" rel="stylesheet" type="text/css">
+
+
+
+    <link href="{% static 'newstyles.min.css'%}" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        .ct-overlay {
+            top: 0;
+            width: 100%;
+            height: 150px;
+            left: 0;
+        }
+
+        #dateOfBirth {
+            min-width: 60%;
+        }
+
+        .button-wrap {
+            margin-top: -2px;
+        }
+
+        @media (max-width: 640px) {
+            .ct-overlay {
+                height: 160px;
+            }
+
+            .ct-btn--proceed {
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+            .box-actions {
+                text-align: center;
+            }
+
+                .box-actions > span, .box-actions > a {
+                    display: block;
+                    margin: 8px auto;
+                }
+
+            .button-wrap {
+                margin-top: 0px;
+            }
+
+            .rewards-div {
+                margin-top: 20px;
+            }
+        }
+        #form16-mail-id {
+            text-align: center;
+            width: 70%;
+            border-bottom: 2px solid;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            padding: 0 0 2px 0;
+            margin: 0; opacity: 1;
+            background: none;
+        }
+        #form16-mail-id:focus {
+            outline: none;
+        }
+
+        .input-file-upload {
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            flex-direction: column;
+            -webkit-box-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            justify-content: center;
+            min-height: 72px;
+            padding: 50px;
+            border: 2px dashed rgba(35,37,51,.2);
+            border-radius: 2px;
+            background: #fff;
+            box-shadow: inset 1px 1px 2px 0 rgba(35,37,51,.1);
+            cursor: pointer;
+            background-color: #f9fdfd;
+        }
+
+        .input-file-upload:hover, .input-file-upload-hover {
+            border-color: #6f7285;
+        }
+
+        .input-file-upload-hover-placeholder {
+            display: flex;
+            -webkit-box-align: center;
+            align-items: center;
+            color: #9092a3;
+            user-select: none;
+            font-size: 20px;
+        }
+
+        @media(min-width: 768px) {
+            #js-form16-upload-input {
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                bottom: 0px;
+                left: 0px;
+                opacity: 0;
+                pointer-events: none;
+            }
+            .cta-center {
+                margin-left: 30%;
+                width:40%;
+            }
+        }
+
+        .rewards-div {
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+        .reward-amount {
+            color: #0099e5;
+            font-size: 16px;
+        }
+        .rewards-icon {
+            width: 60px;
+            margin-right: 5px;
+        }
+    </style>
+<script src="/js/libs/respond.min.js"></script>
+<![endif]-->
+
+
+</head>
+<body class="ct-bg--gray" data-spy="" data-scroll="">
+<nav class="navbar navbar-default ct-navbar ">
+
+    <div class="container-fluid ct-container-fluid   ">
+        <div class="navbar-header ct-navbar--header">
+            <button type="button" class="navbar-toggle ct-navbar--toggle" id="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <a href="#" id="header-logo" class="navbar-brand ct-navbar--image ml10">
+                    <img src="{% static 'legalsalah.png'%}"
+                         alt="LegalSalah" title="Home: LegalSalah"
+                         height="48"
+                         class="header-robot-logo mr10" />
+            </a>
+        </div>
+        <div class="navbar-collapse collapse ct-navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right ct-navbar--nav">
+                    <li id="nav-guide" class="hidden-sm hidden-xs hidden-md">
+                        <a href="https://help.LegalSalah.in/hc/en-us" id="need-help-link" class="ct-font-sm">
+                            Need Help?
+                        </a>
+                    </li>
+
+
+                        <li id="nav-business" class="hidden-sm hidden-xs">
+                            <a href="https://LegalSalah.in/services?ref=navbar" class="ct-font-sm">
+                                Services
+                            </a>
+                        </li>
+                        <li id="nav-register">
+                            <a href="https://LegalSalah.in/Account/Register?entityIndex=0&amp;year=2020" class="ct-font-sm">
+                                Sign up
+                            </a>
+                        </li>
+                        <li id="nav-login" class="highlighted">
+                            <a href="https://LegalSalah.in/Account/LogOn?entityIndex=0&amp;year=2020" class="ct-font-sm">
+                                Login
+                            </a>
+                        </li>
+
+                </ul>
+        </div>
+    </div>
+</nav>
+<script type="text/javascript">
+    function TrackReferralClick(e) {
+        ct_trackClick("ReferralHeaderRewardsClick");
+    }
+</script>
+
+
+    <div class="content-wrapper">
+
+
+
+
+
+
+
+<div class="container">
+
+    <div class="text-center">
+    <h1 class="ct-h45 mt0 ct-regular heading-responsive mb0">Upload your Form-16 PDF</h1>
+    </div>
+
+    <div>
+
+        <div class="row m10">
+        <div class="col-xs-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+                                    <div id="js-error-large-size" class="ct-message ct-message--error hidden" data-valmsg-for="uploadFile" data-valmsg-replace="true">
+                <span for="uploadFile" generated="false">
+                    PDF File is <strong>too large</strong>. You can still e-file by manually entering the details.<br />
+                    Click <a href="https://LegalSalah.in/MyAccount/start?entityIndex=0&amp;year=2020">here</a> to start.
+                </span>
+                <span class="field-validation-valid notice" data-valmsg-for="UploadFile" data-valmsg-replace="true"></span>
+            </div>
+            <div id="js-error-small-size" class="ct-message ct-message--error hidden" data-valmsg-for="uploadFile" data-valmsg-replace="true">
+                <span for="uploadFile" generated="false" class="">PDF File is <strong>too small</strong>. Please try again or contact <a href="mailto:support@LegalSalah.in" title="LegalSalah Support">support@LegalSalah.in</a>.</span>
+                <span class="field-validation-valid notice" data-valmsg-for="UploadFile" data-valmsg-replace="true"></span>
+            </div>
+            <!-- Show error message when file is not selected and proceed to upload -->
+            <div id="js-error-small-size-not-selected" class="ct-message ct-message--error hidden" data-valmsg-for="uploadFile" data-valmsg-replace="true">
+                <span for="uploadFile" generated="false" class="">Please select a file to upload</span>
+                <span class="field-validation-valid notice" data-valmsg-for="UploadFile" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-lg-10 col-lg-offset-1">
+            <div class="row">
+                <div class="col-xs-12 col-md-8">
+
+        <div class="row">
+        <div class="col-xs-12">
+<form action="https://LegalSalah.in/paytax/y2020/0/UploadForm16" autocomplete="off" class="form-inline" enctype="multipart/form-data" id="uploadForm" method="post">                <div class="ct--box mb20-xs">
+                    <div class="ct--box--body ct--box-border-bottom">
+                        <label for="js-form16-upload-input">
+                            <p class="ct-label m0">Choose your Form-16 PDF to upload</p>
+                            <small class="ct-font-grey ct-regular">You can upload a password protected PDF too.</small>
+                        </label>
+                        <div class="m30">
+                            <div class="hidden-xs">
+                                <div class="input-file-upload dropzone" aria-disabled="false" style="position: relative;">
+                                    <div class="input-file-upload-hover-placeholder">
+                                        Drop file here or click to select
+                                    </div>
+                                </div>
+                            </div>
+                            <input name="uploadFile" class="form-16-uploader" id="js-form16-upload-input" accept="application/pdf" type="file"
+                                   autocomplete="off"
+                                   style="">
+
+                            <span class="field-validation-valid notice" data-valmsg-for="UploadFile" data-valmsg-replace="true"></span>
+                        </div>
+                        <div class="progress m10" id="progressbar" style="display: none">
+                            <div class="progress-bar progress-bar-success progress-bar-striped">Uploading your PDF ...</div>
+                        </div>
+                        <button type="submit" name="submitButton" value="submit" class="ct-btn ct-btn--green ct-btn--large ct-float-none ct-btn--proceed cta-center">
+                            Proceed <span class="ml10">❯</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="ct--box button-wrap">
+                    <div class="text-center p10" id="continue_without_Form_16">
+                        <a href="https://LegalSalah.in/Account/Register?entityIndex=0&amp;year=2020&amp;ref=f16uploadpage&amp;returnUrl=%2FMyAccount%2Fstart" title="Skip Form-16 Upload">Continue without Form-16</a>
+                    </div>
+                </div>
+</form>        </div>
+    </div>
+                </div>
+                <div class="col-xs-12 visible-sm m20"></div>
+                <div class="col-xs-12 col-md-4">
+                            <div class="col-xs-12 rewards-div">
+                                <img src="../../../../assets1.LegalSalah-cdn.com/filing/images/RewardsY2020/Banner_Logos/BannerBigAlt.png">
+                            </div>
+                        <div class="hidden-xs">
+                            <div class="col-xs-12 mb10">
+                                <ul class="text-left ct-list--tick-alternate ct-list--tick-alternate-small ct-font-grey m40" style="padding-left :18px">
+                                    <li style="font-size: 14px">You can also upload Form-26AS here</li>
+                                    <li style="font-size: 14px">Switched jobs? You can upload multiple Form-16s one at a time</li>
+                                    <li style="font-size: 14px">You can always edit values if required, after uploading PDF</li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-12">
+
+
+        <div class="ct--tip-box">
+            <div class="title">
+                Where can I get Form16 from?
+            </div>
+            <div class="description">For salaried employees, the HR/Finance Department sends you the Form-16. The deadline for receiving Form-16 is 15th Aug 2020, if you haven&#x2019;t received it yet, then contact your HR.</div>
+        </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="visible-xs col-xs-12">
+            <div class="text-center">
+                <h1 class="ct-h45 ct-regular heading-responsive mb20 ct-bold">OR</h1>
+            </div>
+            <div class="ct--tip-box mb15" style="color: #2b2f32">
+                <div class="ct-label mb10"> Try NEW way to upload your F16! </div>
+                <div class="description">
+                    <p class="ct-font-grey" style="margin-left:10px; font-size: 15px;">
+                        You can now forward your form-16 via email to LegalSalah! Forward it now to
+                        <div id="copy-form16email" style="margin-left:10px; font-size: 15px;" class="ct-blue--text">
+                            <input id="form16-mail-id" value="file@LegalSalah.com" type="text" readonly /> <span id="email-copy-icon" class="fa fa-copy"></span>
+                        </div>
+                        <br /> <span class="ct-font-grey" style="font-size: 14px;"> You will receive instructions on how to continue via email. </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+    </div>
+
+            <div class="container m60">
+
+<div class="ct-trust-markers">
+    <div class="info-text">
+        LegalSalah is a product by Defmacro Software Pvt. Ltd.
+        <div class="trust-links">
+            <a class="link" target="_blank" href="https://LegalSalah.in/Meta/Privacy">Privacy Policy</a>
+            <a class="link" target="_blank" href="https://LegalSalah.in/Meta/Terms">Terms of Use</a>
+        </div>
+    </div>
+    <div class="trust-markers">
+        <div class="marker iso" >
+            <span class="logo">
+                <img src="../../../../assets1.LegalSalah-cdn.com/common/images/iso-logo.png" >
+            </span>
+            ISO 27001
+            <br />
+            Data Center
+        </div>
+        <div class="marker security" >
+            <span class="logo">
+                <img src="../../../../assets1.LegalSalah-cdn.com/common/images/ssl.png">
+            </span>
+            SSL Certified Site
+            <br />
+            128-bit encryption
+        </div>
+    </div>
+</div>
+
+            </div>
+
+
+<script src="{% static 'urlCleanupUtils.min.js'%}" type="text/javascript"></script>
+
+<script>
+    window._ay = "";
+    window._entityIndex = "0";
+    window._pageName = "paytax/UploadForm16";
+    ct_track("efile-funnel", "pageView_paytax/UploadForm16", getURLParameter('ref'))
+</script>
+            <script type="text/javascript" src="../../../../ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script type="text/javascript">!window.jQuery && document.write(unescape('%3Cscript src="/js/libs/jquery-1.11.0.min.js"%3E%3C/script%3E'))</script>
+<script src="{% static 'bootstrap3.min.js'%}" type="text/javascript"></script>        <script type="text/javascript">
+            jQuery(function navToggle() {
+                $('#navbar-toggle').on('click', function () {
+                    $('#navbar-collapse').toggleClass('collapse');
+                });
+            });
+        </script>
+
+
+<script src="{% static 'tracking.min.js'%}" type="text/javascript"></script>
+
+<script>
+    window._ay = "";
+    window._entityIndex = "0";
+    window._pageName = "paytax/UploadForm16";
+    ct_track("efile-funnel", "pageView_paytax/UploadForm16", getURLParameter('ref'))
+</script>
+
+
+
+
+
+
+
+
+    <script type="text/javascript">
+        $dropzone = $(".input-file-upload");
+        var userAgent = window.navigator.userAgent;
+        if (userAgent.indexOf("MSIE ") > 0 || userAgent.indexOf("Trident") > 0) {
+            $dropzone.hide();
+            $('#js-form16-upload-input').css({
+                position: 'relative',
+                opacity: 1,
+                pointerEvents: 'initial'
+            });
+        }
+        $(document).ready(function () {
+            $dropzone.click(function () {
+                $('#js-form16-upload-input').click();
+                ct_trackClick('CHOOSE_FORM16_FILE', 'Clicked to choose file instead of drag and drop', null);
+            });
+            $dropzone.on('drag dragstart dragend dragover dragenter dragleave drop', function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+            })
+            .on('dragover dragenter', function() {
+                $dropzone.addClass('input-file-upload-hover');
+            })
+            .on('dragleave dragend drop', function() {
+                $dropzone.removeClass('input-file-upload-hover');
+            })
+            .on('drop', function(e) {
+                if (e.originalEvent.dataTransfer.files[0].type == "application/pdf") {
+                    $('#js-form16-upload-input').prop('files', e.originalEvent.dataTransfer.files);
+                    fileInputChange();
+                }
+                ct_track('DRAG_AND_DROP', 'DROPPED_FORM16_FILE', null, e.originalEvent.dataTransfer.files[0].name);
+            });
+            $('#continue_without_Form_16').click(function () {
+                ct_trackClick("Continue_Without_Form16", "Clicked to continue without Form-16");
+            });
+        });
+    function _trackEvent(action, label) {
+        window.gtag && window.gtag('event', action, { 'event_label': label });
+    }
+
+    var fileInputChange = function () {
+        $('#js-error-large-size').addClass('hidden');
+        $('#js-error-small-size').addClass('hidden');
+        $('#js-error-small-size-not-selected').addClass('hidden');
+        var fileName = $('#js-form16-upload-input')[0].files[0].name;
+        if (fileName) {
+            $('.input-file-upload-hover-placeholder')[0].innerText = fileName;
+            $('.dropzone').css({
+                'background-color': '#f0fafa',
+                'border': '2px dashed #2b2f32'
+            });
+        }
+    };
+
+    var action = "UploadForm16";
+
+    var checkFileSize = function () {
+        var file = $('#js-form16-upload-input')[0];
+        if (!file) return false;
+        var firstFile = file.files && file.files[0];
+        if (!firstFile) {
+            $('#js-error-small-size-not-selected').removeClass('hidden');
+            return false;
+        }
+        if (firstFile && firstFile.size > 7602176) {
+            _trackEvent(action, "file-too-large");
+        ct_track('efile-funnel', 'large-form16-uploaded', firstFile.name, firstFile.size)
+        $('#js-error-large-size').removeClass('hidden'); return false;
+    }
+    var minSize = new Number(100);
+    if (firstFile && firstFile.size < minSize) {
+        _trackEvent(action, "form16 file size is too-small");
+        $('#js-error-small-size').removeClass('hidden'); return false;
+    }
+    return true;
+    };
+
+    $(function () {
+        var hasFileAPI = !!(window.File && window.FileList && window.FileReader);
+        if (!hasFileAPI) {
+            _trackEvent(action, "does-not-have-file-api");
+            return;
+        }
+
+        $("#js-form16-upload-input").on("change", fileInputChange);
+
+        var uploadHasBegun = false;
+        var useAjaxUpload = window.hasOwnProperty("FormData") && window.hasOwnProperty("chrome");
+        var startTime = 0;
+
+        var xhr = null;
+
+        $("#uploadForm").on('submit.form16', handleFormSubmit);
+
+        function handleFormSubmit(e) {
+            ct_trackClick("form16_Upload");
+
+            if (!checkFileSize()) {
+                e.preventDefault();
+                return;
+            } else {
+                $('#js-error-large-size').addClass("hidden");
+                $('#js-error-small-size').addClass("hidden");
+                $('#js-error-small-size-not-selected').addClass("hidden");
+            }
+
+            if (useAjaxUpload === false) {
+                _trackEvent(action, "choosing-normal-upload");
+                return;
+            }
+
+            _trackEvent(action, "choosing-cloud-upload");
+
+            try {
+                startTime = new Date().getTime();
+                e.preventDefault();
+                $('#js-error').addClass("hidden");
+                $('[name="submitButton"]').attr('disabled', 'disabled');
+
+                var fd = new FormData();
+                var file = $('#js-form16-upload-input').get(0).files[0];
+                fd.append('acl', 'private');
+                fd.append('key', "uz/Form16_dec84d08-0ac0-4739-946b-25272e4f2a2a_mumbai.html");
+                fd.append('policy', "eyJleHBpcmF0aW9uIjoiMjAyMC0xMS0yNFQxMzoyMzozMi43NzFaIiwiY29uZGl0aW9ucyI6W1siZXEiLCIkYnVja2V0IiwiY2xlYXJ0YXgtZm9ybTE2LXByb2R1Y3Rpb24tbXVtYmFpIl0sWyJzdGFydHMtd2l0aCIsIiRhY2wiLCJwcml2YXRlIl0sWyJzdGFydHMtd2l0aCIsIiRrZXkiLCJ1ei9Gb3JtMTZfIl0sWyJzdGFydHMtd2l0aCIsIiRzdWNjZXNzX2FjdGlvbl9yZWRpcmVjdCIsIiJdLFsiZXEiLCIkeC1hbXotYWxnb3JpdGhtIiwiQVdTNC1ITUFDLVNIQTI1NiJdLFsiZXEiLCIkeC1hbXotY3JlZGVudGlhbCIsIkFLSUFTQkNSVE5GN0syQU5ETzZHLzIwMjAxMTI0L2FwLXNvdXRoLTEvczMvYXdzNF9yZXF1ZXN0Il0sWyJlcSIsIiR4LWFtei1kYXRlIiwiMjAyMDExMjRUMTIwMDAwWiJdLFsiY29udGVudC1sZW5ndGgtcmFuZ2UiLCIwIiwiNzYwMjE3NiJdXX0=")
+                fd.append('success_action_redirect', "");
+                fd.append('x-amz-credential', "AKIASBCRTNF7K2ANDO6G/20201124/ap-south-1/s3/aws4_request");
+                fd.append('x-amz-algorithm', 'AWS4-HMAC-SHA256');
+                fd.append('x-amz-date', "20201124T120000Z");
+                fd.append('x-amz-signature', "17d1a00909b4b7ad2186890dfa70f213d7a1d23ebcf897de89beaefd9db724b8");
+                fd.append("file", file);
+
+                xhr = new XMLHttpRequest();
+                xhr.upload.addEventListener("progress", uploadProgress, false);
+                xhr.addEventListener("load", uploadComplete, false);
+                xhr.open('POST.html', 'https://s3.ap-south-1.amazonaws.com/LegalSalah-form16-production-mumbai/', true);
+                xhr.setRequestHeader("Access-Control-Allow-Origin", "*");
+                xhr.onerror = uploadError;
+                xhr.send(fd);
+
+                setProgressBarPercent(0);
+                showProgressBar();
+                setTimeout(checkIfUploadStarted, 7 * 1000, xhr);
+                setTimeout(uploadError, 90 * 1000);
+            } catch (e) {
+                _trackEvent(action, "exception");
+                uploadError();
+            }
+        }
+
+        function checkIfUploadStarted(xhr) {
+            if (!uploadHasBegun) {
+                uploadError();
+            }
+        }
+
+        function uploadError() {
+            _trackEvent(action, "cancelling-cloud-upload");
+            if (xhr && xhr.hasOwnProperty('abort')) xhr.abort();
+            $('[name="submitButton"]').removeAttr('disabled');
+            hideProgressBar();
+            uploadHasBegun = false;
+            useAjaxUpload = false;
+            $("#uploadForm").off('submit.form16').submit();
+        }
+
+        function uploadProgress(e) {
+            if (e.lengthComputable) {
+                var percent = Math.round(100 * e.loaded / e.total);
+
+                if (e.loaded > 1) uploadHasBegun = true;
+
+                setProgressBarPercent(percent);
+            }
+        }
+
+        function uploadComplete() {
+            var endTime = new Date().getTime();
+            var timeTaken = endTime - startTime;
+            window.location = "/paytax/y2020/0/PdfParserForm16" + "?dob=" + $("#dateOfBirth").val() + "&ref=direct-upload&timeTaken=" + timeTaken + "&localFileName=" + $('#js-form16-upload-input').get(0).files[0].name;
+        }
+
+        function showProgressBar() {
+            $("#progressbar").show();
+        }
+
+        function hideProgressBar() {
+            $("#progressbar").hide();
+        }
+
+        function setProgressBarPercent(percent) {
+            $("#progressbar .progress-bar").width(percent + "%");
+        }
+
+        $("#copy-form16email").click(function (e) {
+            e.target.parentNode.getElementsByTagName('input')[0].select();
+            document.execCommand('copy');
+            $("#email-copy-icon").removeClass("fa-copy");
+            $("<span style='color: #12B47D'></span>")
+                .insertBefore($("#email-copy-icon"))
+                .fadeOut(2000);
+            $("#email-copy-icon")
+                .addClass("fa-check-circle")
+                .css('color', '#12B47D')
+                .fadeOut(2000, function () {
+                    $(this)
+                        .addClass("fa-copy")
+                        .css('color', 'inherit')
+                })
+                .fadeIn(100);
+
+            ct_trackClick("Form16ViaEmail_Copy", "Form16ViaEmail Mail ID Copied", null);
+        });
+    });
+
+    </script>
+
+    <script>
+    $(function() {
+
+        window.setTimeout(removeAnimation, 3000);
+
+    });
+
+    function removeAnimation() {
+        $(".ani").removeClass("ani-left ani-opacity");
+    }
+</script>
+
+
+
+
+
+
+</body>
+</html>

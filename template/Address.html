@@ -1,0 +1,678 @@
+{%load static%}
+<!DOCTYPE html>
+<html class="no-js">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+<meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet" type="text/css">
+    <title>Address | Permanent Information</title>
+        <meta name="keywords" content="India, Indian Taxes, Taxes, Free, Efiling, Efiling Taxes, Efiling Taxes in India, Free Efiling Taxes in India, Free for Women efiling, Fastest way to efile, LegalSalah, LegalSalah, LegalSalah India, legalsalah.com, Easiest way to efile, cheap efiling,
+      Income Tax, Form 16, Form-16, two form-16, save taxes, save taxes India, Filing Taxes, Filing Income Tax, Efiling Income Tax, Efiling Income Tax in India, Free Filing Income Tax India, Fastest way to file taxes India, Sahaj, Sugam, ITR, Saral, ITR-1, ITR-2, ITR-3, ITR-4, ITR-5,
+      ITR-6, ITR-7, Trust, Business and Profession, House Property, Income, Salary, Other Income, Interest Income, Loans, Section 80C, Section 80CCF, Section 80D, Section 80E, Section 80U, LIC, PPF, NSC, Capital Gains, Sale of Stock, Sale of Shares, Sale of House, Section 54, Section 54F,
+      Section 54EC, Section 80G, Donations, Digital Signatures" />
+
+        <meta name="description" content="File Income Tax Returns online with LegalSalah. LegalSalah is fast, safe and very easy to use. Save money.
+  LegalSalah handles all cases of Income from Salary, Interest Income, Capital Gains, House Property, Business and Profession. LegalSalah maximize your deductions by handling all deductions under Section 80 like section 80C, 80D, 80CCF, 80G, 80E, 80U and the rest.
+  You can use your digital signature to e-file. Our products are trusted by hundreds of CAs and corporations for filing taxes and TDS." />
+    <meta name="author" content="LegalSalah" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="{% static 'taxcss.min.css'%}" rel="stylesheet" type="text/css">
+
+</head>
+
+
+<body class=" ">
+
+
+    <div class="container">
+        <header>
+
+    <navheader>
+        <div class="brand">
+            <h1 class="logo-container mb0">
+                <a href="#">
+                    <img src="{% static 'legalsalah.png'%}" alt="">
+
+				</a>
+            </h1>
+
+                <a href="#" class="header-tax-elements hide shown-mo btn-mobile-menu-trigger">
+                    <span class="header-secondary-nav">
+            Address
+            </span>
+    </a>
+
+
+            <a href="#" class="btn-mobile-menu hide shown-mo btn-mobile-menu-trigger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+    </navheader>
+        </header>
+
+        <div id="main" role="main">
+
+
+    <div class="tac primary-nav-wrap hidden-mo" style="margin: 15px 0; margin-top: 5px;">
+        <ol class="container2 clearfix center-nav primary-nav">
+                <li><a class="nav-PersonalInfo  active active" href="/">1. Personal Info</a></li>
+                <li><a class="nav-IncomeSources " href="/salary">2. Income Sources</a></li>
+                <li><a class="nav-Deductions " href="/deduction">3. Deductions</a></li>
+                <li><a class="nav-TaxesPaid " href="/tds">4. Taxes Paid</a></li>
+                <li><a class="nav-TaxFiling " href="http://legalsalah.com/Account/LogOn?returnUrl=%2Fpaytax%2Fy2020%2F0%2FSummary">5. Tax Filing</a></li>
+        </ol>
+    </div>
+        <div class="hidden-mo secondary-nav-wrap" style="margin: 15px 0; margin-bottom: 20px;">
+            <ol class="secondary-nav container2 clearfix center-nav">
+                    <li><a class=" " href="/">A. Personal Info</a></li>
+                    <li><a class="  active active" href="/address">B. Address</a></li>
+                <span class="secondary-nav-highlight-bar"></span>
+            </ol>
+        </div>
+        <div class="container">
+            <ol class="pretty-timeline hide shown-mo fade-in btn-mobile-menu-trigger" href="#">
+                    <li><a class="active nav-PersonalInfo" href="/">Your Info</a></li>
+                    <li><a class="nav-IncomeSources" href="/salary">Incomes</a></li>
+                    <li><a class="nav-Deductions" href="/deduction">Deductions</a></li>
+                    <li><a class="nav-TaxesPaid" href="/tds">Taxes Paid</a></li>
+                    <li><a class="nav-TaxFiling" href="#">Tax Filing</a></li>
+            </ol>
+        </div>
+            <div class="hide mobile-26-as-import tac">
+                <a class="m20 ml20 mr20 awesome yellow large">
+                    Import your data automatically
+                </a>
+            </div>
+            <div class="hide shown-mo mt40"></div>
+<div class="sliding-nav-overlay hide shown-mo"></div>
+<div class="sliding-nav-menu hide shown-mo">
+    <div class="sliding-nav-logo"></div>
+    <div class="sliding-nav-scroller">
+
+            <div class="mobile-paytax-navigation">
+                <ul>
+                        <li><a class="active nav-PersonalInfo" href="/personal">Personal Info</a></li>
+                            <ul>
+                                    <li><a class="nav-Permanent" href="/personal">Personal Info</a></li>
+                                    <li><a class="active nav-Address" href="/address">Address</a></li>
+                            </ul>
+                        <li><a class="nav-IncomeSources" href="/salary">Income Sources</a></li>
+                        <li><a class="nav-Deductions" href="/deduction">Deductions</a></li>
+                        <li><a class="nav-TaxesPaid" href="/tds">Taxes Paid</a></li>
+                        <li><a class="nav-TaxFiling" href="#">Tax Filing</a></li>
+                </ul>
+
+            </div>
+    </div>
+</div>
+
+
+
+
+<div class="container">
+    <h2>Your Address</h2>
+
+<form action="/add" method="post">
+{%csrf_token%}
+ <div class="span-24 last">
+{%csrf_token%}
+            <p class="quiet narrate">You can enter either your current or permanent address here.</p>
+
+        </div>
+        <div class="span-6 offset-1 last paytax-box-wrap right light hidden-mo">
+
+<div class="inline-promo">
+    <div class="promo-text sidebar-plan-box">
+        <h4>
+            <strong> Get a tax expert to file your return </strong>
+        </h4>
+        <p>
+            Filing return yourself is <strong>Free.</strong>
+        </p>
+        <p>
+            If you need an expert's help, you can opt for our paid plans starting ₹799.
+        </p>
+        <a tabindex="-1" class="promo-btn" onclick="ct_trackClick('BuyCaPlan');" target="_blank" href="https://legalsalah.com/s/Pricing?ref=paytax_Permanent">
+            See Plans
+        </a>
+    </div>
+</div>
+        </div>
+        <div>
+    <div class="span-17" id="address-form">
+
+<style>
+    #nriQuestionYes.active, #nriQuestionNo.active {
+        background-color: #61c700;
+        color: white;
+    }
+    .stateField {
+        width: 100%;
+    }
+</style>
+
+    <fieldset>
+
+        <legend>Address</legend>
+        <div class="span-16 last">
+            <div class="span-8">
+                <p>
+                    <label for=flatDoorBlockNumber>Flat/Door/Block Number</label> <span class="redstar"> *</span><br />
+<input class="text track-focus" data-name="AddressFlat" id="flatDoorBlockNumber" name="flat_num" type="text" value="" /><br />
+                    <span class="field-validation-valid notice" data-valmsg-for="flatDoorBlockNumber" data-valmsg-replace="true"></span>
+                </p>
+            </div>
+            <div class="span-8 last">
+                <p>
+                    <label for=premiseBuildingVillageName>Premise Name</label> <span class="quiet">This field is optional.</span><br />
+                    <input class="text" id="premiseBuildingVillageName" name="premise_name" type="text" value="" /><br />
+                    <span class="field-validation-valid notice" data-valmsg-for="premiseBuildingVillageName" data-valmsg-replace="true"></span>
+                </p>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="span-8">
+                <p>
+                    <label for=roadStreetPostOffice>Road / Street</label> <span class="quiet">This field is optional.</span><br />
+                    <input class="text" id="roadStreetPostOffice" name="road_name" type="text" value="" /><br />
+                    <span class="field-validation-valid notice" data-valmsg-for="roadStreetPostOffice" data-valmsg-replace="true"></span>
+                </p>
+            </div>
+        <div class="span-8 last" >
+            <p>
+                <label class="pinOrZip-label" for=pinCodeOrZipCode>Pincode</label> <span class="redstar"> *</span><br />
+                <input class="text capitalize track-focus" id="pinCodeOrZipCode" name="pincode" type="text" value="" /><br />
+                <span class="field-validation-valid notice" data-valmsg-for="pincode" data-valmsg-replace="true"></span>
+            </p>
+        </div>
+        <div class="clearfix"></div>
+        <div class="span-8">
+            <p>
+                <label for=areaLocality>Area / Locality</label> <span class="redstar"> *</span><br />
+                <input class="text" id="areaLocality" name="area" type="text" value="" /><br />
+                <span class="field-validation-valid notice" data-valmsg-for="areaLocality" data-valmsg-replace="true"></span>
+            </p>
+        </div>
+        <div class="span-8 last">
+            <p>
+                <label for=townCityDistrict>Town / City</label> <span class="redstar"> *</span><br />
+                <input class="text" id="townCityDistrict" name="town_name" type="text" value="" /><br />
+                <span class="field-validation-valid notice" data-valmsg-for="townCityDistrict" data-valmsg-replace="true"></span>
+            </p>
+        </div>
+        <div class="clearfix"></div>
+        <div class="span-8">
+            <p>
+                <label for=stateInIndia>State</label> <span class="redstar"> *</span><br />
+                <select class="stateField" data-val="true" data-val-required="The stateInIndia field is required." id="stateInIndia" name="state_name"><option value="ANDAMANANDNICOBARISLANDS">ANDAMAN AND NICOBAR ISLANDS</option>
+<option value="ANDHRAPRADESH">ANDHRA PRADESH</option>
+<option value="ARUNACHALPRADESH">ARUNACHAL PRADESH</option>
+<option value="ASSAM">ASSAM</option>
+<option value="BIHAR">BIHAR</option>
+<option value="CHANDIGARH">CHANDIGARH</option>
+<option value="CHHATISHGARH">CHHATISHGARH</option>
+<option value="DADRANAGARHAVELI">DADRA &amp; NAGAR HAVELI</option>
+<option value="DAMANDIU">DAMAN &amp; DIU</option>
+<option selected="selected" value="DELHI">DELHI</option>
+<option value="GOA">GOA</option>
+<option value="GUJARAT">GUJARAT</option>
+<option value="HARYANA">HARYANA</option>
+<option value="HIMACHALPRADESH">HIMACHAL PRADESH</option>
+<option value="JAMMUKASHMIR">JAMMU &amp; KASHMIR</option>
+<option value="JHARKHAND">JHARKHAND</option>
+<option value="KARNATAKA">KARNATAKA</option>
+<option value="KERALA">KERALA</option>
+<option value="LAKHSWADEEP">LAKHSWADEEP</option>
+<option value="LADAKH">LADAKH</option>
+<option value="MADHYAPRADESH">MADHYA PRADESH</option>
+<option value="MAHARASHTRA">MAHARASHTRA</option>
+<option value="MANIPUR">MANIPUR</option>
+<option value="MEGHALAYA">MEGHALAYA</option>
+<option value="MIZORAM">MIZORAM</option>
+<option value="NAGALAND">NAGALAND</option>
+<option value="ORISSA">ORISSA</option>
+<option value="PONDICHERRY">PONDICHERRY</option>
+<option value="PUNJAB">PUNJAB</option>
+<option value="RAJASTHAN">RAJASTHAN</option>
+<option value="SIKKIM">SIKKIM</option>
+<option value="TAMILNADU">TAMIL NADU</option>
+<option value="TELANGANA">TELANGANA</option>
+<option value="TRIPURA">TRIPURA</option>
+<option value="UTTARANCHAL">UTTARAKHAND</option>
+<option value="UTTARPRADESH">UTTAR PRADESH</option>
+<option value="WESTBENGAL">WEST BENGAL</option>
+<option value="StateoutsideIndia">State outside India</option>
+</select><br />
+                <span class="field-validation-valid notice" data-valmsg-for="stateInIndia" data-valmsg-replace="true"></span>
+            </p>
+        </div>
+        <div class="span-8 last">
+                <p>
+                    <label for=country>Country</label> <span class="redstar"> *</span> <br />
+                    <select class="country-dropdown" data-val="true" data-val-required="The country field is required." id="country_name" name="country_name"><option selected="selected" value="INDIA">INDIA</option>
+<option value="AFGHANISTAN">AFGHANISTAN</option>
+<option value="ALAND_ISLANDS">&#xC5;LAND ISLANDS</option>
+<option value="ALBANIA">ALBANIA</option>
+<option value="ALGERIA">ALGERIA</option>
+<option value="AMERICAN_SAMOA">AMERICAN SAMOA</option>
+<option value="ANDORRA">ANDORRA</option>
+<option value="ANGOLA">ANGOLA</option>
+<option value="ANGUILLA">ANGUILLA</option>
+<option value="ANTARCTICA">ANTARCTICA</option>
+<option value="ANTIGUA_AND_BARBUDA">ANTIGUA AND BARBUDA</option>
+<option value="ARGENTINA">ARGENTINA</option>
+<option value="ARMENIA">ARMENIA</option>
+<option value="ARUBA">ARUBA</option>
+<option value="AUSTRALIA">AUSTRALIA</option>
+<option value="AUSTRIA">AUSTRIA</option>
+<option value="AZERBAIJAN">AZERBAIJAN</option>
+<option value="BAHAMAS">BAHAMAS</option>
+<option value="BAHRAIN">BAHRAIN</option>
+<option value="BANGLADESH">BANGLADESH</option>
+<option value="BARBADOS">BARBADOS</option>
+<option value="BELARUS">BELARUS</option>
+<option value="BELGIUM">BELGIUM</option>
+<option value="BELIZE">BELIZE</option>
+<option value="BENIN">BENIN</option>
+<option value="BERMUDA">BERMUDA</option>
+<option value="BHUTAN">BHUTAN</option>
+<option value="BOLIVIA">BOLIVIA (PLURINATIONAL STATE OF)</option>
+<option value="BONAIRE_SINT_EUSTATIUS_AND_SABA">BONAIRE, SINT EUSTATIUS AND SABA</option>
+<option value="BOSNIA_AND_HERZEGOVINA">BOSNIA AND HERZEGOVINA</option>
+<option value="BOTSWANA">BOTSWANA</option>
+<option value="BOUVET_ISLAND">BOUVET ISLAND</option>
+<option value="BRAZIL">BRAZIL</option>
+<option value="BRITISH_INDIAN_OCEAN_TERRITORY">BRITISH INDIAN OCEAN TERRITORY</option>
+<option value="BRUNEI_DARUSSALAM">BRUNEI DARUSSALAM</option>
+<option value="BULGARIA">BULGARIA</option>
+<option value="BURKINA_FASO">BURKINA FASO</option>
+<option value="BURUNDI">BURUNDI</option>
+<option value="CAPE_VERDE">CABO VERDE</option>
+<option value="CAMBODIA">CAMBODIA</option>
+<option value="CAMEROON">CAMEROON</option>
+<option value="CANADA">CANADA</option>
+<option value="CAYMAN_ISLANDS">CAYMAN ISLANDS</option>
+<option value="CENTRAL_AFRICAN_REPUBLIC">CENTRAL AFRICAN REPUBLIC</option>
+<option value="CHAD">CHAD</option>
+<option value="CHILE">CHILE</option>
+<option value="CHINA">CHINA</option>
+<option value="COCOS_KEELING_ISLANDS">COCOS (KEELING) ISLANDS</option>
+<option value="CHRISTMAS_ISLAND">CHRISTMAS ISLAND</option>
+<option value="COLOMBIA">COLOMBIA</option>
+<option value="COMOROS">COMOROS</option>
+<option value="CONGO_REPUBLIC_OF_THE">CONGO</option>
+<option value="COOK_ISLANDS">COOK ISLANDS</option>
+<option value="COSTA_RICA">COSTA RICA</option>
+<option value="COTE_DIVOIRE_IVORY_COAST">C&#xD4;TE D&#x27;IVOIRE (IVORY COAST)</option>
+<option value="CROATIA">CROATIA</option>
+<option value="CUBA">CUBA</option>
+<option value="CURACAO">CURA&#xC7;AO</option>
+<option value="CYPRUS">CYPRUS</option>
+<option value="CZECH_REPUBLIC">CZECHIA</option>
+<option value="DEMOCRATIC_PEOPLES_REPUBLIC_OF_KOREA_NORTH_KOREA">KOREA, DEMOCRATIC PEOPLE&#x27;S REPUBLIC OF (NORTH KOREA)</option>
+<option value="DEMOCRATIC_REPUBLIC_OF_THE_CONGO">CONGO, DEMOCRATIC REPUBLIC OF THE</option>
+<option value="DENMARK">DENMARK</option>
+<option value="DJIBOUTI">DJIBOUTI</option>
+<option value="DOMINICA">DOMINICA</option>
+<option value="DOMINICAN_REPUBLIC">DOMINICAN REPUBLIC</option>
+<option value="ECUADOR">ECUADOR</option>
+<option value="EGYPT">EGYPT</option>
+<option value="EL_SALVADOR">EL SALVADOR</option>
+<option value="EQUATORIAL_GUINEA">EQUATORIAL GUINEA</option>
+<option value="ERITREA">ERITREA</option>
+<option value="ESTONIA">ESTONIA</option>
+<option value="ETHIOPIA">ETHIOPIA</option>
+<option value="FALKLAND_ISLANDS_MALVINAS">FALKLAND ISLANDS (MALVINAS)</option>
+<option value="FAROE_ISLANDS">FAROE ISLANDS</option>
+<option value="FIJI_ISLANDS">FIJI</option>
+<option value="FINLAND">FINLAND</option>
+<option value="FRANCE">FRANCE</option>
+<option value="FRENCH_GUIANA">FRENCH GUIANA</option>
+<option value="FRENCH_POLYNESIA">FRENCH POLYNESIA</option>
+<option value="FRENCH_SOUTHERN_TERRITORIES">FRENCH SOUTHERN TERRITORIES</option>
+<option value="GABON">GABON</option>
+<option value="GAMBIA">GAMBIA</option>
+<option value="GEORGIA">GEORGIA</option>
+<option value="GERMANY">GERMANY</option>
+<option value="GHANA">GHANA</option>
+<option value="GIBRALTAR">GIBRALTAR</option>
+<option value="GREECE">GREECE</option>
+<option value="GREENLAND">GREENLAND</option>
+<option value="GRENADA">GRENADA</option>
+<option value="GUADELOUPE">GUADELOUPE</option>
+<option value="GUAM">GUAM</option>
+<option value="GUATEMALA">GUATEMALA</option>
+<option value="GUERNSEY">GUERNSEY</option>
+<option value="GUINEA">GUINEA</option>
+<option value="GUINEABISSAU">GUINEA-BISSAU</option>
+<option value="GUYANA">GUYANA</option>
+<option value="HAITI">HAITI</option>
+<option value="HEARD_ISLAND_AND_MCDONALD_ISLANDS">HEARD ISLAND AND MCDONALD ISLANDS</option>
+<option value="HOLY_SEE">HOLY SEE</option>
+<option value="HONDURAS">HONDURAS</option>
+<option value="HONG_KONG">HONG KONG</option>
+<option value="HUNGARY">HUNGARY</option>
+<option value="ICELAND">ICELAND</option>
+<option value="INDONESIA">INDONESIA</option>
+<option value="IRAN">IRAN, ISLAMIC REPUBLIC OF</option>
+<option value="IRAQ">IRAQ</option>
+<option value="IRELAND">IRELAND</option>
+<option value="ISLE_OF_MAN">ISLE_OF_MAN</option>
+<option value="ISRAEL">ISRAEL</option>
+<option value="ITALY">ITALY</option>
+<option value="JAMAICA">JAMAICA</option>
+<option value="JAPAN">JAPAN</option>
+<option value="JERSEY">JERSEY</option>
+<option value="JORDAN">JORDAN</option>
+<option value="KAZAKHSTAN">KAZAKHSTAN</option>
+<option value="KENYA">KENYA</option>
+<option value="KIRIBATI">KIRIBATI</option>
+<option value="KUWAIT">KUWAIT</option>
+<option value="KYRGYZSTAN">KYRGYZSTAN</option>
+<option value="LAO_PEOPLES_DEMOCRATIC_REPUBLIC">LAO PEOPLE&#x27;S DEMOCRATIC REPUBLIC</option>
+<option value="LATVIA">LATVIA</option>
+<option value="LEBANON">LEBANON</option>
+<option value="LESOTHO">LESOTHO</option>
+<option value="LIBERIA">LIBERIA</option>
+<option value="LIBYA">LIBYA</option>
+<option value="LIECHTENSTEIN">LIECHTENSTEIN</option>
+<option value="LITHUANIA">LITHUANIA</option>
+<option value="LUXEMBOURG">LUXEMBOURG</option>
+<option value="MACAO">MACAO</option>
+<option value="MACEDONIA">MACEDONIA</option>
+<option value="MADAGASCAR">MADAGASCAR</option>
+<option value="MALAWI">MALAWI</option>
+<option value="MALAYSIA">MALAYSIA</option>
+<option value="MALDIVES">MALDIVES</option>
+<option value="MALI">MALI</option>
+<option value="MALTA">MALTA</option>
+<option value="MARSHALL_ISLANDS">MARSHALL ISLANDS</option>
+<option value="MARTINIQUE">MARTINIQUE</option>
+<option value="MAURITANIA">MAURITANIA</option>
+<option value="MAURITIUS">MAURITIUS</option>
+<option value="MAYOTTE">MAYOTTE</option>
+<option value="MEXICO">MEXICO</option>
+<option value="MICRONESIA_FEDERATED_STATES_OF">MICRONESIA, FEDERATED STATES OF</option>
+<option value="MONACO">MONACO</option>
+<option value="MONGOLIA">MONGOLIA</option>
+<option value="MONTENEGRO">MONTENEGRO</option>
+<option value="MONTSERRAT">MONTSERRAT</option>
+<option value="MOROCCO">MOROCCO</option>
+<option value="MOZAMBIQUE">MOZAMBIQUE</option>
+<option value="MYANMAR">MYANMAR</option>
+<option value="NAMIBIA">NAMIBIA</option>
+<option value="NAURU">NAURU</option>
+<option value="NEPAL">NEPAL</option>
+<option value="NETHERLANDS">NETHERLANDS</option>
+<option value="NEW_CALEDONIA">NEW CALEDONIA</option>
+<option value="NEW_ZEALAND">NEW ZEALAND</option>
+<option value="NICARAGUA">NICARAGUA</option>
+<option value="NIGER">NIGER</option>
+<option value="NIGERIA">NIGERIA</option>
+<option value="NIUE">NIUE</option>
+<option value="NORFOLK_ISLAND">NORFOLK ISLAND</option>
+<option value="NORTHERN_MARIANA_ISLANDS">NORTHERN MARIANA ISLANDS</option>
+<option value="NORWAY">NORWAY</option>
+<option value="OMAN">OMAN</option>
+<option value="PAKISTAN">PAKISTAN</option>
+<option value="PALAU">PALAU</option>
+<option value="PALESTINE_STATE_OF">PALESTINE, STATE_OF</option>
+<option value="PANAMA">PANAMA</option>
+<option value="PAPUA_NEW_GUINEA">PAPUA NEW GUINEA</option>
+<option value="PARAGUAY">PARAGUAY</option>
+<option value="PERU">PERU</option>
+<option value="PHILIPPINES">PHILIPPINES</option>
+<option value="PITCAIRN">PITCAIRN</option>
+<option value="POLAND">POLAND</option>
+<option value="PORTUGAL">PORTUGAL</option>
+<option value="PUERTO_RICO">PUERTO RICO</option>
+<option value="QATAR">QATAR</option>
+<option value="REUNION">R&#xC9;UNION</option>
+<option value="REPUBLIC_OF_KOREA_SOUTH_KOREA">KOREA, REPUBLIC OF (SOUTH KOREA)</option>
+<option value="REPUBLIC_OF_MOLDOVA">MOLDOVA, REPUBLIC OF</option>
+<option value="ROMANIA">ROMANIA</option>
+<option value="RUSSIAN_FEDERATION">RUSSIAN FEDERATION</option>
+<option value="RWANDA">RWANDA</option>
+<option value="SAINT_BARTHELEMY">SAINT BARTH&#xC9;LEMY</option>
+<option value="SAINT_HELENA_ASCENSION_AND_TRISTAN_DA_CUNHA">SAINT HELENA, ASCENSION AND TRISTAN DA CUNHA</option>
+<option value="SAINT_KITTS_AND_NEVIS">SAINT KITTS AND NEVIS</option>
+<option value="SAINT_LUCIA">SAINT LUCIA</option>
+<option value="SAINT_MARTIN_FRENCH_PART">SAINT MARTIN (FRENCH PART)</option>
+<option value="SAINT_PIERRE_AND_MIQUELON">SAINT PIERRE AND MIQUELON</option>
+<option value="SAINT_VINCENT_AND_THE_GRENADINES">SAINT VINCENT AND THE GRENADINES</option>
+<option value="SAMOA">SAMOA</option>
+<option value="SAN_MARINO">SAN MARINO</option>
+<option value="SAO_TOME_AND_PRINCIPE">SAO TOME AND PRINCIPE</option>
+<option value="SAUDI_ARABIA">SAUDI ARABIA</option>
+<option value="SENEGAL">SENEGAL</option>
+<option value="SERBIA">SERBIA</option>
+<option value="SEYCHELLES">SEYCHELLES</option>
+<option value="SIERRA_LEONE">SIERRA LEONE</option>
+<option value="SINGAPORE">SINGAPORE</option>
+<option value="SINT_MAARTEN_DUTCH_PART">SINT MAARTEN (DUTCH PART)</option>
+<option value="SLOVAKIA">SLOVAKIA</option>
+<option value="SLOVENIA">SLOVENIA</option>
+<option value="SOLOMON_ISLANDS">SOLOMON ISLANDS</option>
+<option value="SOMALIA">SOMALIA</option>
+<option value="SOUTH_AFRICA">SOUTH AFRICA</option>
+<option value="SOUTH_GEORGIA_AND_THE_SOUTH_SANDWICH_ISLANDS">SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS</option>
+<option value="SOUTH_SUDAN">SOUTH SUDAN</option>
+<option value="SPAIN">SPAIN</option>
+<option value="SRI_LANKA">SRI LANKA</option>
+<option value="SUDAN">SUDAN</option>
+<option value="SURINAME">SURINAME</option>
+<option value="SVALBARD_AND_JAN_MAYEN">SVALBARD AND JAN MAYEN</option>
+<option value="SWAZILAND">SWAZILAND</option>
+<option value="SWEDEN">SWEDEN</option>
+<option value="SWITZERLAND">SWITZERLAND</option>
+<option value="SYRIAN_ARAB_REPUBLIC">SYRIAN ARAB REPUBLIC</option>
+<option value="TAIWAN_PROVINCE_OF_CHINA">TAIWAN, PROVINCE OF CHINA</option>
+<option value="TAJIKISTAN">TAJIKISTAN</option>
+<option value="THAILAND">THAILAND</option>
+<option value="TIMORLESTE">TIMOR-LESTE</option>
+<option value="TOGO">TOGO</option>
+<option value="TOKELAU">TOKELAU</option>
+<option value="TONGA">TONGA</option>
+<option value="TRINIDAD_AND_TOBAGO">TRINIDAD AND TOBAGO</option>
+<option value="TUNISIA">TUNISIA</option>
+<option value="TURKEY">TURKEY</option>
+<option value="TURKMENISTAN">TURKMENISTAN</option>
+<option value="TURKS_AND_CAICOS_ISLANDS">TURKS AND CAICOS ISLANDS</option>
+<option value="TUVALU">TUVALU</option>
+<option value="UGANDA">UGANDA</option>
+<option value="UKRAINE">UKRAINE</option>
+<option value="UNITED_ARAB_EMIRATES">UNITED ARAB EMIRATES</option>
+<option value="UNITED_KINGDOM_OF_GREAT_BRITAIN_AND_NORTHERN_IRELAND">UNITED KINGDOM OF GREAT BRITAIN AND NORTHERN IRELAND</option>
+<option value="UNITED_REPUBLIC_OF_TANZANIA">TANZANIA, UNITED REPUBLIC OF</option>
+<option value="UNITED_STATES_OF_AMERICA">UNITED STATES OF AMERICA</option>
+<option value="UNITED_STATES_MINOR_OUTLYING_ISLANDS">UNITED STATES MINOR OUTLYING ISLANDS</option>
+<option value="URUGUAY">URUGUAY</option>
+<option value="UZBEKISTAN">UZBEKISTAN</option>
+<option value="VANUATU">VANUATU</option>
+<option value="VENEZUELA_BOLIVARIAN_REPUBLIC_OF">VENEZUELA, BOLIVARIAN REPUBLIC OF</option>
+<option value="VIETNAM">VIETNAM</option>
+<option value="VIRGIN_ISLANDS_BRITISH">VIRGIN_ISLANDS (BRITISH)</option>
+<option value="VIRGIN_ISLANDS_US">VIRGIN ISLANDS (U.S.)</option>
+<option value="WALLIS_AND_FUTUNA">WALLIS AND FUTUNA</option>
+<option value="WESTERN_SAHARA">WESTERN SAHARA</option>
+<option value="YEMEN">YEMEN</option>
+<option value="ZAMBIA">ZAMBIA</option>
+<option value="ZIMBABWE">ZIMBABWE</option>
+<option value="OTHERS">OTHERS</option>
+</select>
+                </p>
+        </div>
+        <div class="clearfix"></div>
+        <div class="span-8 last">
+            <p style="margin: 0;">
+                <label for=mobile>Mobile Phone number</label>
+<span class="redstar"> *</span>                <br />
+
+                <div style="display: inline-block;">
+                    <span class="quiet">Country Code</span><br />
+                    <input autocomplete="none" class="text span-2 track-focus right-align" data-name="MobileCode" id="mobileCode" name="mobileCode" placeholder="Country Code" style="text-align: right;" type="tel" value="91" />
+                </div>
+                <div style="display: inline-block;">
+                    <span class="quiet">Mobile Number</span><br />
+                    <input autocomplete="none" class="text span-6 track-focus" data-name="MobileNumber" id="mobile" name="contact_number" placeholder="Mobile Number" type="tel" value="" />
+                </div>
+                <span class="field-validation-valid notice" data-valmsg-for="mobileCode" data-valmsg-replace="true"></span>
+                <span class="field-validation-valid notice" data-valmsg-for="mobile" data-valmsg-replace="true"></span>
+            </p>
+        </div>
+        <div class="span-8 last">
+                <p>
+                    <label for=email>Email Address</label> <span class="redstar"> *</span> <br /><br />
+                    <input class="text" id="email" name="email" type="email" value="" /><br />
+                    <span class="field-validation-valid notice" data-valmsg-for="email" data-valmsg-replace="true"></span>
+                </p>
+        </div>
+        <div class="clearfix"></div>
+        <div class="span-8 last">
+                <p>
+                    <label for=emailSec>Email Address (secondary)</label><br />
+                    <span class="quiet">Tip: If you are using an official email ID, enter your personal ID here</span><br />
+                    <input class="text" id="emailSec" name="email2" type="email" value="" /><br />
+                    <span class="field-validation-valid notice" data-valmsg-for="emailSec" data-valmsg-replace="true"></span>
+                </p>
+        </div>
+    </fieldset>
+<script src="../../../../cdn.jsdelivr.net/npm/algoliasearch%403.26.0/dist/algoliasearchLite.min.js"></script>
+<script src="../../../../cdn.jsdelivr.net/npm/jquery%403.3.1/dist/jquery.min.js"></script>
+<script>
+    var PincodeValue, StateValue, DistrictValue, index;
+    function FillPincode(StateVal, DistrictVal) {
+        if (typeof algoliasearch === 'function') {
+            var AlgoliaIFSCAppId = 'RIX9BSS5J6';
+            var AlgoKey = '3027f05726ecd269445d954a1a045f01';
+            var client = algoliasearch(AlgoliaIFSCAppId, AlgoKey);
+            index = client.initIndex('PinNumbers');
+            /* Done to warmup the algolia DNS lookup etc so that the next search is fast */
+            index.search("400064", function () { });
+            fillCityState();
+        }
+    }
+    function fillCityState() {
+        var pincode = $('#' + PincodeValue).val();
+        if (pincode.trim() !== "") {
+            index.search(pincode, searchDone);
+        }
+    }
+    function searchDone(err, content) {
+        if (err != null) return;
+        if (content.hits.length > 0) {
+            var hit = content.hits[0];
+            $("#" + StateValue).val(hit.statename.replace(/\s+/, ""));
+            $("#" + DistrictValue).val(hit.Districtname);
+        }
+    }
+    function AutoFillPincode(PincodeVal, StateVal, DistrictVal)
+    {
+        PincodeValue = PincodeVal;
+        StateValue = StateVal;
+        DistrictValue = DistrictVal;
+        $("#" + PincodeValue).blur(function () {
+            FillPincode(StateValue, DistrictValue);
+        });
+    }
+</script>
+ <script type="text/javascript">
+     var countryField = document.getElementsByClassName("country-dropdown")[0];
+     var stateField = document.getElementsByClassName("stateField")[0];
+     var pinOrzipLabel = document.getElementsByClassName("pinOrZip-label")[0];
+
+     countryField.onchange = function () {
+         var country = countryField.value;
+         if (country.toUpperCase() !== "INDIA") {
+             pinOrzipLabel.innerHTML = "Zipcode";
+             stateField.value = "StateoutsideIndia";
+         }
+         else {
+             pinOrzipLabel.innerHTML = "Pincode";
+             stateField.value = "DELHI";
+         }
+     };
+    $(document).ready(function () {
+        AutoFillPincode('pinCodeOrZipCode', 'stateInIndia', 'townCityDistrict');
+    });
+</script>
+    </div>
+            <div class="span-24 last sticky-check sticky-buttons">
+                <div class="sticky-container">
+                    <p>
+                        <button type="submit" disable-on-click="true" data-tracking-action="sticky_save_button" data-tracking-label="Address" class="large awesome blue btn-save full-640">
+                            Save
+                        </button>
+                    </p>
+                </div>
+            </div>
+        </div>
+</form></div>
+
+
+            <div class="mt50 sticky-footer-check">
+
+<div class="ct-trust-markers">
+    <div class="info-text">
+        © 2020 Legal Salah Solutions Private Limited | All rights reserved
+    </div>
+</div>
+
+            </div>
+        </div>
+
+    </div> <!--! end of #container -->
+        <script src="../../../../ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script>!window.jQuery && document.write(unescape('%3Cscript src="/js/libs/jquery-1.11.0.min.js"%3E%3C/script%3E'))</script>
+
+    <script src="{% static 'taxjs.min.js'%}" type="text/javascript"></script>
+
+
+<script src="{% static 'urlCleanupUtils.min.js'%}" type="text/javascript"></script>
+<script>
+        var isNRI = "" === "True" ? true : false;
+
+        $("#country").change(showNriQuestion);
+
+        $("#nriQuestionYes").click(nriQuestionYesClicked);
+
+        $("#nriQuestionNo").click(nriQuestionNoClicked);
+
+        function showNriQuestion() {
+            var country = $("#country").val();
+            if ((country && country.toUpperCase() !== "INDIA") || isNRI) {
+                $("#nriQuestion").slideDown();
+            }
+        }
+
+        function setNRIStatus(status) {
+            return $.post('/paytax/y2020/0/ResidentialStatus', {
+                residential: status
+            });
+        }
+
+        function nriQuestionYesClicked() {
+            setNRIStatus("NonResident");
+            $("#nriQuestionYes").addClass("active");
+            $("#nriQuestionNo").removeClass("active");
+        }
+
+        function nriQuestionNoClicked() {
+            setNRIStatus("Resident");
+            $("#nriQuestionYes").removeClass("active");
+            $("#nriQuestionNo").addClass("active");
+        }
+        $(showNriQuestion);
+    </script>
+
+
+<script src="{% static 'dc.min.js'%}" type="text/javascript"></script>    <script src="{% static 'frontdc.min.js'%}" type="text/javascript"></script>
+
+
+</body>
+</html>

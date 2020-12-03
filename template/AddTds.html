@@ -1,0 +1,315 @@
+{%load static%}
+<!DOCTYPE html>
+<html class="no-js">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet" type="text/css">
+    <title>Taxes Paid: Tax Deducted at Source | Add TDS entry</title>
+        <meta name="keywords" content="add tds entry, tds, tax deducted at source, taxes paid tds" />
+
+        <meta name="description" content="Add entry of tax deducted at source or TDS entry" />
+    <meta name="author" content="LegalSalah" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link href="{% static 'taxcss.min.css'%}" rel="stylesheet" type="text/css">
+
+</head>
+
+
+<body class=" ">
+
+
+    <div class="container">
+        <header>
+            
+    <navheader>
+        <div class="brand">
+            <h1 class="logo-container mb0">
+                <a href="">
+                     <img src="{% static 'img/legalsalah.png'%}" alt="">
+                </a>
+            </h1>
+
+                <a href="#" class="header-tax-elements hide shown-mo btn-mobile-menu-trigger">
+                    <span class="header-secondary-nav">
+            TDS
+            </span>
+    </a>
+
+
+            <a href="#" class="btn-mobile-menu hide shown-mo btn-mobile-menu-trigger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div><nav class="navigation hidden-mo">
+
+
+        </nav>
+    </navheader>
+       </header>
+
+        <div id="main" role="main">
+
+            
+    <div class="tac primary-nav-wrap hidden-mo" style="margin: 15px 0; margin-top: 5px;">
+        <ol class="container2 clearfix center-nav primary-nav">
+                <li><a class="nav-PersonalInfo " href="/">1. Personal Info</a></li>
+                <li><a class="nav-IncomeSources " href="/salary">2. Income Sources</a></li>
+                <li><a class="nav-Deductions " href="/deduction">3. Deductions</a></li>
+                <li><a class="nav-TaxesPaid  active active" href="/tds">4. Taxes Paid</a></li>
+                <li><a class="nav-TaxFiling " href="http://legalsalah.com/Account/LogOn?returnUrl=%2Fpaytax%2Fy2020%2F0%2FSummary">5. Tax Filing</a></li>
+        </ol>
+    </div>
+        <div class="hidden-mo secondary-nav-wrap" style="margin: 15px 0; margin-bottom: 20px;">
+            <ol class="secondary-nav container2 clearfix center-nav">
+                    <li><a class="  active active" href="/tds">A. TDS</a></li>
+                    <li><a class=" " href="/selftax">B. Self Tax Payments</a></li>
+                <span class="secondary-nav-highlight-bar"></span>
+            </ol>
+        </div>
+        <div class="container">
+            <ol class="pretty-timeline hide shown-mo fade-in btn-mobile-menu-trigger" href="#">
+                    <li><a class="nav-PersonalInfo" href="/">Your Info</a></li>
+                    <li><a class="nav-IncomeSources" href="/salary">Incomes</a></li>
+                    <li><a class="nav-Deductions" href="/deduction">Deductions</a></li>
+                    <li><a class="active nav-TaxesPaid" href="/tds">Taxes Paid</a></li>
+                    <li><a class="nav-TaxFiling" href="http://legalsalah.com/Account/LogOn?returnUrl=%2Fpaytax%2Fy2020%2F0%2FSummary">Tax Filing</a></li>
+            </ol>
+        </div>
+<div class="sliding-nav-overlay hide shown-mo"></div>
+<div class="sliding-nav-menu hide shown-mo">
+    <div class="sliding-nav-logo"></div>
+    <div class="sliding-nav-scroller">
+
+            <div class="mobile-paytax-navigation">
+                <ul>
+                        <li><a class="nav-PersonalInfo" href="/">Personal Info</a></li>
+                        <li><a class="nav-IncomeSources" href="/salary">Income Sources</a></li>
+                        <li><a class="nav-Deductions" href="/deduction">Deductions</a></li>
+                        <li><a class="active nav-TaxesPaid" href="/tds">Taxes Paid</a></li>
+                            <ul>
+                                    <li><a class="active nav-TdsSummary" href="/tds">TDS</a></li>
+                                    <li><a class="nav-TaxesPaidSummary" href="/selftax">Self Tax Payments</a></li>
+                            </ul>
+                        <li><a class="nav-TaxFiling" href="http://legalsalah.com/Account/LogOn?returnUrl=%2Fpaytax%2Fy2020%2F0%2FSummary">Tax Filing</a></li>
+                </ul>
+
+            </div>
+        <div class="mobile-site-navigation hide shown-mo">
+            
+<ul class="navigation-menu">
+                <li><a href="https://legalsalah.com/Guide/eFilingIncomeTaxReturns">Guide to Tax Filing</a></li>
+                <li><a href="https://legalsalah.com/Meta/Pricing" onclick="ct_trackClick('BuyCaPlan');">Buy Assisted Tax Filing Plan</a></li>
+                <li><a href="https://legalsalah.com/Account/Register?returnUrl=/paytax/y2020/0/AddTds">Sign up</a></li>
+                <li><a href="https://legalsalah.com/Account/LogOn?returnUrl=/paytax/y2020/0/AddTds">Log In</a></li>
+
+        </ul>
+
+
+        </div>
+    </div>
+</div>
+
+            
+
+<div class = "container">
+<h2>Add a TDS entry (Tax Deducted at Source)</h2>
+<form action="https://legalsalah.com/paytax/y2020/0/AddTds" method="post">    <div class = "span-24 last">
+        
+    </div>
+    <div class = "span-16">
+        <style>
+.indented-block{
+    margin-left: 5%;
+}
+.dropdown-tds{
+    width: 300px;
+}
+</style>
+
+
+<fieldset>
+        <legend>Tax Deducted At Source</legend>
+        <p><em>Provide this information from TDS certificate provided by deductor</em></p>
+        <p>
+            <label for=tanOfDeductor>TAN of Deductor</label> <span class="redstar"> *</span><br />
+            <input class="text capitalize" id="tanOfDeductor" name="tanOfDeductor" type="text" value="" /><br />
+            <span class="field-validation-valid notice" data-valmsg-for="tanOfDeductor" data-valmsg-replace="true"></span>
+        </p>
+        <p>
+            <label for=nameOfThePersonWhoDeductedTax>Name of Deductor</label> <span class="redstar"> *</span><br />
+            <input class="text" id="nameOfThePersonWhoDeductedTax" name="nameOfThePersonWhoDeductedTax" type="text" value="" /><br />
+            <span class="field-validation-valid notice" data-valmsg-for="nameOfThePersonWhoDeductedTax" data-valmsg-replace="true"></span>
+        </p>
+        <p>
+            <label for=amountDeducted>Total Tax Deducted</label> <span class="redstar"> *</span><br />
+            <span class="quiet">Leave it blank if not deducted in the name of assessee. </span> <br />
+            
+<input class="text formatRupee" id="amountDeducted" name="amountDeducted" novalidate="novalidate" type="tel" value="" />
+<br />
+            <span class="field-validation-valid notice" data-valmsg-for="amountDeducted" data-valmsg-replace="true"></span>
+        </p>
+        <p>
+            <label for=taxAmountCreditedToCurrentYear>Tax Deducted claimed for this year</label> <span class="redstar"> *</span><br />
+            <span class="quiet">Usually this amount is same as Total Tax Deducted. </span> <br />
+            
+<input class="text formatRupee" id="taxAmountCreditedToCurrentYear" name="taxAmountCreditedToCurrentYear" novalidate="novalidate" type="tel" value="" />
+<br />
+            <span class="field-validation-valid notice" data-valmsg-for="taxAmountCreditedToCurrentYear" data-valmsg-replace="true"></span>
+        </p>
+    <p id="carryForwardText" style="display:none"></p>
+        <p>
+            <label for=amountPaid>Income against which TDS was deducted</label> <span class="redstar"> *</span><br />
+            
+<input class="text formatRupee" id="amountPaid" name="amountPaid" novalidate="novalidate" type="tel" value="" />
+<br />
+            <span class="field-validation-valid notice" data-valmsg-for="amountPaid" data-valmsg-replace="true"></span>
+        </p>
+
+        <p>
+            <label for=TypeOfIncome>Type of Income</label><br />
+            <select data-val="true" data-val-required="The TypeOfIncome field is required." id="TypeOfIncome" name="TypeOfIncome"><option selected="selected" value="NotInit"></option>
+<option value="OtherSources">Other Sources</option>
+<option value="HouseProperty">House Property</option>
+<option value="BusinessAndProfession">Business &amp; Profession</option>
+<option value="CapitalGain">Capital Gain</option>
+<option value="ExemptIncome">Exempt Incom</option>
+<option value="NotApplicableUs194N">Not Applicable - TDS us 194N</option>
+</select>  <br />
+            <span class="field-validation-valid notice" data-valmsg-for="TypeOfIncome" data-valmsg-replace="true"></span>
+        </p>
+
+        <p>
+            <label for=deductedYear>Financial Year in which TDS was deducted</label> <span class="redstar"> *</span><br />
+            <span class="quiet">Usually this is the same as the Financial Year of the return (2019-2020). </span> <br />
+            <select id="deductedYear" name="deductedYear"><option selected="selected" value=""></option>
+<option value="2019">2019-2020</option>
+<option value="2018">2018-2019</option>
+<option value="2017">2017-2018</option>
+<option value="2016">2016-2017</option>
+<option value="2015">2015-2016</option>
+<option value="2014">2014-2015</option>
+<option value="2013">2013-2014</option>
+<option value="2012">2012-2013</option>
+<option value="2011">2011-2012</option>
+<option value="2010">2010-2011</option>
+<option value="2009">2009-2010</option>
+</select><br />
+            <span class="field-validation-valid notice" data-valmsg-for="deductedYear" data-valmsg-replace="true"></span>
+        </p>
+</fieldset>
+
+<script>
+    function showTDSCreditForm() {
+        ct_trackClick('click', 'click-button-add-tds-credit-entry');
+        if($("#toggleTDSCreditForm").is(":visible")) {
+            $("#IsTDScreditsFromAnotherAssesseePresent").val(false) 
+        }
+        else {
+            $("#IsTDScreditsFromAnotherAssesseePresent").val(true)
+        }
+        $('#toggleTDSCreditForm').toggle();
+    }
+
+        function CalculateCarryForward() {
+
+        var tdsCreditRelatingTo = $('#TdsCreditRelatingTo').val();
+        var amountDecucted = $('#amountDeducted').val();
+        var tdsCredit = $('#TdsCredit').val() || "";
+        var taxAmountCreditedToCurrentYear = $('#taxAmountCreditedToCurrentYear').val();
+        var carryforward = $('#carryForwardText');
+        
+        var a = Number(amountDecucted.replace(/\,/g,""));
+        var b = Number(tdsCredit.replace(/\,/g,""))        
+        var c = Number(taxAmountCreditedToCurrentYear.replace(/\,/g,""))
+
+        if (tdsCreditRelatingTo == "NotInit") {
+            carryforward.hide();
+            return;
+        }    
+        else if(tdsCreditRelatingTo == "Self") {
+            if(!amountDecucted || !tdsCredit || !taxAmountCreditedToCurrentYear)
+            {
+                carryforward.hide();
+                return;
+            }            
+            var carry = a-b-c;
+            if(carry>0) {
+                carryforward.show();
+                carryforward.html( "TDS carried forward: Rs "+carry);
+            }
+            else {
+                carryforward.hide();
+            }
+        }
+        else if (tdsCreditRelatingTo == "Others") {
+            if(!tdsCredit || !taxAmountCreditedToCurrentYear)
+            {
+                carryforward.hide();
+                return;
+            }
+            var carry = b-c;
+            if(carry>0) {
+                carryforward.show();
+                carryforward.html( "TDS carried forward: Rs "+carry);
+            }
+            else {
+                carryforward.hide();
+            }
+        }
+    }
+
+    document.addEventListener("DOMContentLoaded", function (event) {
+        if('False' === 'True') {
+           $('#toggleTDSCreditForm').toggle();
+        }
+        CalculateCarryForward();
+        $('#amountDeducted').on('change', function() { CalculateCarryForward() });
+        $('#TdsCredit').on('change', function() { CalculateCarryForward() });
+        $('#taxAmountCreditedToCurrentYear').on('change', function() { CalculateCarryForward() });
+    });
+
+</script>
+    </div>    
+    <div class = "span-24 last sticky-check sticky-buttons">
+        <div class="sticky-container">
+            <div class="span-12">
+                <p>
+                    <button disable-on-click="true" type="submit" data-tracking-action="sticky_save_button" data-tracking-label="add_tds" class="large awesome blue btn-save full-640" name="submitButton" value="DoneAdding">
+                        Save
+                    </button>
+                    <a class="large awesome black" data-tracking-action="sticky_back_button" data-tracking-label="add_tds" disable-on-click="true" href="TdsSummary.html">Back to Taxes Paid Summary</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</form></div>
+
+            <div class="mt50 sticky-footer-check">
+                
+<div class="ct-trust-markers">
+    
+</div>
+
+            </div>
+        </div>
+
+    </div> <!--! end of #container -->
+        <script src="../../../../ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script>!window.jQuery && document.write(unescape('%3Cscript src="/js/libs/jquery-1.11.0.min.js"%3E%3C/script%3E'))</script>
+
+    <script src="{% static 'taxjs.min.js'%}" type="text/javascript"></script>
+
+    
+<script src="{% static 'urlCleanupUtils.min.js'%}" type="text/javascript"></script>
+
+    <script src="{% static 'frontdc.min.js'%}" type="text/javascript"></script>        
+    
+
+</body>
+
+</html>
